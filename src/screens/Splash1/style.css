@@ -1,0 +1,24 @@
+/* SplashScreen.css */
+
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh; /* Full height of the viewport */
+  background-image: url('./splash.png');
+  background-size: cover;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;/* Adjust the size of the logo as needed */
+  height: auto;
+}

@@ -1,0 +1,556 @@
+.order-confirmed {
+  background: url("./bg.svg");
+  background-color: #ffffff;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+.order-confirmed .frame {
+  background-color: #ffffff;
+  height: 212px;
+  left: -73px;
+  position: absolute;
+  top: 419px;
+  transform: rotate(9.42deg);
+  width: 532px;
+}
+
+.order-confirmed .group {
+  height: 128px;
+  position: relative;
+  top: 49px;
+}
+
+.order-confirmed .div {
+  height: 128px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 265px;
+}
+
+.order-confirmed .overlap-group {
+  height: 172px;
+  left: 73px;
+  position: absolute;
+  top: -23px;
+  width: 193px;
+}
+
+.order-confirmed .rectangle {
+  height: 77px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 7px;
+}
+
+.order-confirmed .img {
+  height: 76px;
+  left: 0;
+  position: absolute;
+  top: 12px;
+  width: 72px;
+}
+
+.order-confirmed .rectangle-2 {
+  height: 76px;
+  left: 49px;
+  position: absolute;
+  top: 86px;
+  width: 78px;
+}
+
+.order-confirmed .rectangle-3 {
+  border: 1.97px solid;
+  border-color: #c0afff1a;
+  border-radius: 0px 163.93px 163.93px 0px;
+  height: 66px;
+  left: 59px;
+  position: absolute;
+  top: 22px;
+  width: 68px;
+}
+
+.order-confirmed .union-wrapper {
+  height: 64px;
+  left: 126px;
+  position: absolute;
+  top: 23px;
+  width: 66px;
+}
+
+.order-confirmed .union {
+  height: 76px;
+  left: -6px;
+  position: absolute;
+  top: -6px;
+  width: 78px;
+}
+
+.order-confirmed .group-2 {
+  height: 74px;
+  left: 114px;
+  position: absolute;
+  top: 98px;
+  width: 78px;
+}
+
+.order-confirmed .ellipse {
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 81px;
+  width: 56px;
+}
+
+.order-confirmed .group-3 {
+  height: 64px;
+  left: 2991px;
+  position: absolute;
+  top: -39784px;
+  width: 66px;
+}
+
+.order-confirmed .group-4 {
+  height: 128px;
+  left: 267px;
+  position: absolute;
+  top: 0;
+  width: 265px;
+}
+
+.order-confirmed .overlap {
+  height: 162px;
+  left: -10px;
+  position: absolute;
+  top: -23px;
+  width: 275px;
+}
+
+.order-confirmed .rectangle-4 {
+  height: 77px;
+  left: 11px;
+  position: absolute;
+  top: 0;
+  width: 78px;
+}
+
+.order-confirmed .rectangle-5 {
+  height: 76px;
+  left: 76px;
+  position: absolute;
+  top: 12px;
+  width: 78px;
+}
+
+.order-confirmed .rectangle-6 {
+  height: 76px;
+  left: 131px;
+  position: absolute;
+  top: 86px;
+  width: 48px;
+}
+
+.order-confirmed .rectangle-7 {
+  border: 1.97px solid;
+  border-color: #c0afff1a;
+  border-radius: 0px 163.93px 163.93px 0px;
+  height: 66px;
+  left: 142px;
+  position: absolute;
+  top: 22px;
+  width: 68px;
+}
+
+.order-confirmed .img-wrapper {
+  height: 64px;
+  left: 209px;
+  position: absolute;
+  top: 23px;
+  width: 66px;
+}
+
+.order-confirmed .union-2 {
+  height: 64px;
+  left: 2524px;
+  position: absolute;
+  top: -39845px;
+  width: 66px;
+}
+
+.order-confirmed .group-5 {
+  height: 74px;
+  left: 0;
+  position: absolute;
+  top: 66px;
+  width: 78px;
+}
+
+.order-confirmed .ellipse-2 {
+  height: 66px;
+  left: 71px;
+  position: absolute;
+  top: 81px;
+  width: 68px;
+}
+
+.order-confirmed .group-6 {
+  height: 64px;
+  left: 2727px;
+  position: absolute;
+  top: -39828px;
+  width: 66px;
+}
+
+.order-confirmed .group-wrapper {
+  background-color: #ffffff;
+  height: 212px;
+  left: -73px;
+  position: absolute;
+  top: 97px;
+  transform: rotate(-4.85deg);
+  width: 532px;
+}
+
+.order-confirmed .group-7 {
+  height: 133px;
+  position: relative;
+  top: 49px;
+}
+
+.order-confirmed .group-8 {
+  height: 133px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 265px;
+}
+
+.order-confirmed .rectangle-8 {
+  height: 66px;
+  left: 2990px;
+  position: absolute;
+  top: -39495px;
+  width: 66px;
+}
+
+.order-confirmed .overlap-group-2 {
+  height: 146px;
+  left: 72px;
+  position: absolute;
+  top: -1px;
+  width: 199px;
+}
+
+.order-confirmed .rectangle-9 {
+  height: 74px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 62px;
+}
+
+.order-confirmed .rectangle-10 {
+  height: 74px;
+  left: 60px;
+  position: absolute;
+  top: 61px;
+  width: 74px;
+}
+
+.order-confirmed .rectangle-11 {
+  border: 1.97px solid;
+  border-color: #c0afff1a;
+  border-radius: 0px 163.93px 163.93px 0px;
+  height: 68px;
+  left: 60px;
+  position: absolute;
+  top: 0;
+  width: 68px;
+}
+
+.order-confirmed .group-9 {
+  height: 67px;
+  left: 127px;
+  position: absolute;
+  top: 1px;
+  width: 66px;
+}
+
+.order-confirmed .union-3 {
+  height: 74px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 74px;
+}
+
+.order-confirmed .group-10 {
+  height: 74px;
+  left: 0;
+  position: absolute;
+  top: 72px;
+  width: 1px;
+}
+
+.order-confirmed .group-11 {
+  height: 74px;
+  left: 126px;
+  position: absolute;
+  top: 55px;
+  width: 72px;
+}
+
+.order-confirmed .ellipse-3 {
+  height: 68px;
+  left: 0;
+  position: absolute;
+  top: 69px;
+  width: 64px;
+}
+
+.order-confirmed .group-12 {
+  height: 133px;
+  left: 267px;
+  position: absolute;
+  top: 0;
+  width: 265px;
+}
+
+.order-confirmed .overlap-2 {
+  height: 146px;
+  left: -6px;
+  position: absolute;
+  top: -1px;
+  width: 271px;
+}
+
+.order-confirmed .rectangle-12 {
+  height: 75px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  width: 74px;
+}
+
+.order-confirmed .rectangle-13 {
+  height: 74px;
+  left: 66px;
+  position: absolute;
+  top: 0;
+  width: 74px;
+}
+
+.order-confirmed .rectangle-14 {
+  height: 74px;
+  left: 138px;
+  position: absolute;
+  top: 61px;
+  width: 34px;
+}
+
+.order-confirmed .rectangle-15 {
+  border: 1.97px solid;
+  border-color: #c0afff1a;
+  border-radius: 0px 163.93px 163.93px 0px;
+  height: 68px;
+  left: 138px;
+  position: absolute;
+  top: 0;
+  width: 68px;
+}
+
+.order-confirmed .group-13 {
+  height: 67px;
+  left: 205px;
+  position: absolute;
+  top: 1px;
+  width: 66px;
+}
+
+.order-confirmed .union-4 {
+  height: 67px;
+  left: 2528px;
+  position: absolute;
+  top: -39464px;
+  width: 66px;
+}
+
+.order-confirmed .group-14 {
+  height: 74px;
+  left: 6px;
+  position: absolute;
+  top: 72px;
+  width: 72px;
+}
+
+.order-confirmed .ellipse-4 {
+  height: 68px;
+  left: 74px;
+  position: absolute;
+  top: 69px;
+  width: 68px;
+}
+
+.order-confirmed .group-15 {
+  height: 66px;
+  left: 2724px;
+  position: absolute;
+  top: -39473px;
+  width: 66px;
+}
+
+.order-confirmed .frame-2 {
+  align-items: center;
+  display: inline-flex;
+  gap: 253px;
+  left: 16px;
+  position: absolute;
+  top: 10px;
+}
+
+.order-confirmed .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.order-confirmed .frame-3 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative; 
+  animation: moveArrow 1s linear infinite;
+
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+
+.order-confirmed .solid-system-battery {
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.order-confirmed .line-system-wifi {
+  height: 15px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 15px;
+}
+
+.order-confirmed .frame-wrapper {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 40px;
+  left: 30%;
+  position: absolute;
+  top: 712px;
+}
+
+.order-confirmed .div-wrapper {
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 40px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 25px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 18px 24px;
+  position: relative;
+}
+
+.order-confirmed .frame-4 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  margin-bottom: -6.5px;
+  margin-top: -6.5px;
+  position: relative;
+}
+
+.order-confirmed .frame-5 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  position: relative;
+}
+
+.order-confirmed .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.order-confirmed .vector {
+  height: 7.37px;
+  margin-right: -0.5px;
+  object-fit: cover;
+  position: relative;
+  width: 9px;
+}
+
+.order-confirmed .frame-6 {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 13px;
+  left: 27px;
+  position: absolute;
+  top: 329px;
+}
+
+.order-confirmed .text-wrapper-3 {
+  color: var(--colorthemelighttext-colorbody-text);
+  font-family: "Outfit", Helvetica;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 18.9px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 296px;
+}
+
+.order-confirmed .p {
+  color: #50505080;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: 306px;
+}

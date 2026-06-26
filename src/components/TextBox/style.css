@@ -1,0 +1,46 @@
+.text-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .text-box-label {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #181818;
+    white-space: nowrap;
+  }
+  
+  .text-box-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #eff1f4;
+    border-radius: 8px;
+    height: 48px;
+    padding: 5px 8px;
+  }
+  
+  .text-box-pretext {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1e1e1e;
+  }
+  
+  .text-box-input {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1e1e1e;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  
+  .text-box-input::placeholder {
+    color: #1e1e1e66; /* Placeholder text color */
+  }
+  

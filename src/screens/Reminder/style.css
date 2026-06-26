@@ -1,0 +1,566 @@
+.reminder-page {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.reminder-page .rem-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5%;
+  width: 90%;
+  max-height: calc(100dvh - 145px );
+  overflow-y: auto;
+}
+
+.reminder-page .rem-card {
+  width: 100%;
+  padding: 10px 0;
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px #0000001a;
+  cursor: pointer;
+}
+
+.reminder-page .rem-card-progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.reminder-page .rem-card-progress-head{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.reminder-page .rem-card-progress-head-text{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+}
+.reminder-page .rem-card-progress-head span{
+    font-size: 10px;
+    font-weight: 600;
+    color: gray;
+    display: inline-flex;
+}
+
+.reminder-page .rem-card-progress-dates{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.reminder-page .rem-card-progress-date-icon img{
+    width: 15px;
+    height: 15px;
+}
+.reminder-page .rem-card-progress-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.reminder-page .happy-reminder{
+    margin: auto;
+    width: 50vw;
+}
+
+.reminder-page .happy-text{
+    color: white;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.reminder-page .add-rem-arrow {
+  width: 25px;
+  margin-top: 5px;
+}
+
+.reminder-page .card-actions-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.reminder-page .text-wrapper-876 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.reminder-page .add-rem-icon {
+  width: 40px;
+}
+
+.reminder-page .rem-card-selected {
+  background-color: #f3edff;
+}
+
+.reminder-page .digit-rem-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reminder-page .digit-rem-wrapper span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.reminder-page .digit-rem {
+  background-color: #b2b5fb;
+  border-radius: 10px;
+  color: black;
+  padding: 12.5px 15px;
+}
+
+.reminder-page .digit-rem-ampm{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1.5px solid #79747E;
+}
+
+.reminder-page .digit-rem-am{
+    background-color: #ECE6F0;
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #79747E
+}
+
+.reminder-page .digit-rem-pm{
+    background-color: #ECE6F0;
+    padding: 5px 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.reminder-page .digit-rem-ampm .selected{
+    background-color: #FFD8E4;
+}
+
+/* Modal overlay with blurred background */
+.reminder-page .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it appears above other content */
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
+}
+
+/* Center the date picker modal */
+.reminder-page .modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Apply the same font as the base component */
+.react-datepicker__triangle {
+  display: none; /* Optional: Hide the triangle */
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+  font-family: "Outfit", Helvetica, sans-serif; /* Use your base component's font */
+}
+
+.react-datepicker__day--selected {
+  background-color: #9747ff !important; /* Use #9747FF as the color for selected date */
+  color: white; 
+}
+
+.react-datepicker__day--today {
+  font-weight: bold; 
+}
+
+.react-datepicker__header {
+  background-color: white !important; 
+  border-bottom: 0.8px solid #E4E5E7 !important;
+  font-family: "Outfit", Helvetica, sans-serif; /* Same font */
+}
+
+.react-datepicker{
+    outline: none !important;
+    border: none !important;
+}
+
+.reminder-page .products-bottom-section{
+    width: 100%;
+}
+
+.reminder-page{
+    font-family: "Outfit";
+  }
+  
+  /* Button to trigger the modal */
+  .reminder-page .add-medicine-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .reminder-page .add-medicine-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Modal overlay */
+  .reminder-page .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000;
+  }
+  
+  /* Modal content */
+  .reminder-page .add-modal-content {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Top section (Search box and results) */
+  .reminder-page .top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  /* Search box */
+  .reminder-page .rem-search-box {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .reminder-page .search-box:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Product results */
+  .reminder-page .product-results {
+    min-height: 50vh;
+    max-height: 55vh;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .reminder-page .product-item {
+    display: flex;
+    align-items: left;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  .reminder-page .product-item span{
+    text-align: left;
+  }
+  
+  .reminder-page .product-item:last-child {
+    border-bottom: none;
+  }
+  
+  .reminder-page .product-item:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .reminder-page .product-item.selected {
+    background-color: #F3EDFF;
+    color: black
+  }
+  
+  /* Product image */
+  .reminder-page .product-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  /* Bottom section */
+.reminder-page .bottom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #F3EDFF;
+  }
+  
+  /* Header section with flex layout */
+  .reminder-page .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .reminder-page .header-section h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .reminder-page .toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Selected grid layout */
+  .reminder-page .selected-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    max-height: 90px;
+    overflow-y: auto;
+  }
+  
+  /* Chip style for selected items */
+  .reminder-page .chip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 9px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reminder-page .chip button.remove-btn {
+    background: none;
+    border: none;
+    color: #ff0000;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  /* Black background for Done button */
+  .reminder-page .done-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .reminder-page .done-btn:hover {
+    background-color: #333;
+  }
+  
+  .reminder-page .arrow-icon.collapsed {
+    transform: rotate(180deg);
+  }
+
+  .reminder-page .rem-card-container .active{
+    background-color: #f3edff;
+  }
+
+
+  /* Modal Container */
+.rem-progress-container .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 85%;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Modal Header */
+  .rem-progress-container .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .rem-progress-container .modal-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .rem-progress-container .modal-header button {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .rem-progress-container .modal-header button:hover {
+    background: #d32f2f;
+  }
+  
+  /* Modal Body */
+  .rem-progress-container .modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between rows */
+  }
+  
+  /* Modal Row */
+  .rem-progress-container .modal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: background 0.3s;
+  }
+  
+  .rem-progress-container .modal-row:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Date Column */
+  .rem-progress-container .modal-row span:first-child {
+    flex: 1; /* Take up most of the space */
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Time Column */
+  .rem-progress-container .modal-row span:nth-child(2) {
+    flex: 1; /* Adjust spacing between columns */
+    text-align: center;
+    font-size: 14px;
+    color: #616161;
+  }
+  
+  /* Icon Column */
+  .rem-progress-container .modal-row span:last-child {
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rem-progress-container .modal-row img {
+    height: 20px;
+    width: 20px;
+  }
+  
+.reminder-page .align-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rem-noti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.rem-noti-icon {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.rem-noti-text {
+  font-size: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #333;
+}
+
+.rem-noti-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  justify-content: center; /* Ensure buttons are centered horizontally */
+}
+
+.not-modal {
+  width: 70%;
+}
+
+.rem-noti-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.rem-noti-btn:hover {
+  background-color: #444; /* Slightly darker shade for hover effect */
+}
+
+.rem-noti-btn:focus {
+  outline: none;
+}

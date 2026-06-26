@@ -1,0 +1,200 @@
+.upload-prescription {
+  background-color: #ffffff;
+  width: 100%;
+  display: block;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100dvh;
+}
+
+.upload-prescription .search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f2fe;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.upload-prescription .upload-section {
+  display: flex;
+  justify-content: center;
+}
+
+.upload-prescription .search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #0000001a;
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 328px;
+}
+
+.upload-prescription .search-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.upload-prescription .input-text {
+  border: none;
+  outline: none;
+  font-family: "Outfit", Helvetica;
+  font-size: 14px;
+  color: #999999;
+  flex: 1;
+}
+
+.upload-prescription .mic-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.upload-prescription .upload-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.upload-prescription .options-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  margin-top: 20px; /* Space between the search section and options */
+}
+
+.upload-prescription .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 30%; /* Equal width and allows wrapping */
+  min-width: 80px; /* Optional: sets a minimum width for items */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.upload-prescription .icon-container {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
+}
+
+.upload-prescription .icon {
+  width: 44px;
+  height: 44px;
+}
+
+.upload-prescription .option-label {
+  font-family: "Outfit", Helvetica;
+  font-size: 10px;
+  color: #000000;
+}
+
+.prescription-wrapper .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.prescription-wrapper .detail-icon-container {
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+
+.detail-icon-container img {
+}
+
+.prescription-wrapper .detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.prescription-wrapper .detail-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 25%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.prescription-desc {
+  margin: 30px;
+}
+
+.prescription-wrapper {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.prescription-wrapper .detail-item {
+  flex: 1 1 25%;
+}
+
+.prescription-wrapper .prescription-desc {
+  text-align: center;
+}
+
+.prescription-wrapper .option{
+  cursor: pointer;
+}
+
+.prescription-wrapper .upload-placeholder{
+  display: none;
+}
+
+.upload-placeholder img{
+  width: 70%;
+}
+
+
+@media only screen and (min-width: 700px) {
+  .prescription-wrapper {
+    margin: 0 6%;
+    width: 88%;
+    flex-direction: row;
+    display: flex;
+  }
+  .prescription-desc {
+    width: 50%;
+    display: block;
+  }
+  .prescription-section {
+    width: 50%;
+  }
+  .prescription-wrapper .detail-item {
+    flex: 1 1 25%;
+  }
+  .prescription-wrapper .upload-placeholder{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    display: block;
+  }
+}

@@ -1,0 +1,169 @@
+.profile-container {
+  background-color: #ffffff;
+  display: block;
+  gap: 65px;
+  flex-direction: column;
+  height: calc(100dvh);
+  overflow-y: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* profile-header Section */
+.profile-container .profile-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.profile-container .profile-header-image {
+  height: 110px;
+  width: 78px;
+  margin: 0 auto;
+}
+
+.profile-container .profile-header-title {
+  color: #191435;
+  font-family: "Outfit", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.profile-container .profile-header-subtitle {
+  color: #000000;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+/* Form Section */
+.profile-container .profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-container .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container .form-label {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.profile-container .form-input, .profile-container .form-select {
+  background-color: #f8f9fa;
+  border: 1px solid #eff1f4;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  color: #1e1e1e;
+  outline: none;
+  width: 100%;
+}
+
+.profile-container .form-input{
+  width: 90%;
+}
+
+.profile-container .form-input::placeholder {
+  color: #a0a0a0;
+}
+
+/* Submit Button */
+.profile-container .form-submit {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.profile-container .submit-button {
+  background-color: #1e1e1e;
+  border-radius: 40px;
+  padding: 18px 24px;
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-container .submit-icon {
+  width: 20px;
+}
+
+
+/* Header section */
+.profile-container .header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  gap: 15px;
+}
+
+.profile-container .header-icon {
+  height: 110px;
+  right: 40px;
+  position: absolute;
+  top: 82px;
+  width: 78px;
+}
+
+.profile-container .header-title {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  z-index: 2;
+  position: relative;
+
+}
+
+.profile-container .header-subtitle {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  z-index: 3;
+  position: relative;
+
+}
+
+
+
+.profile-container .create-account-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.profile-container .create-account-button {
+  background-color: #ffffff;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  gap: 8px;
+}
+
+.profile-container .create-account-text {
+  color: #1e1e1e;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.profile-container .header-container, .profile-container .profile-form {
+  margin: 2% 5%;
+}

@@ -1,0 +1,196 @@
+.why-medingen-section {
+    padding: 24px 20px;
+    background: #fff;
+    width: 100%;
+}
+
+.why-medingen {
+    max-width: 1320px;
+    margin: 0 auto;
+    width: 100%;
+    /* Ensure it takes full width up to max-width */
+}
+
+.section-title-1 {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    margin-bottom: 14px;
+    width: 100%;
+    /* Ensure title takes full width to center properly */
+}
+
+.section-subtitle {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 50px;
+    display: none;
+}
+
+.highlight-purple {
+    color: #8B5CF6;
+}
+
+/* Main Grid Styles */
+.why-grid {
+    display: flex;
+    /* Changed to Flex for better centering/distribution control */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center items */
+    gap: 24px;
+    /* Slightly tighter gap */
+    margin-top: 28px;
+}
+
+.why-card {
+    display: flex;
+    flex-direction: column;
+    /* Changed to column for better icon-top look if needed, or row? Ref image shows row. Let's stick to row but ensure centering. */
+    align-items: center;
+    /* Center content inside card */
+    text-align: center;
+    /* Center text */
+    flex: 0 1 calc(16.666% - 30px);
+    /* 6 items per row approx */
+    min-width: 160px;
+    /* Prevent too small squeeze */
+}
+
+/* If the design requires row layout (Icon + Text), use this: */
+.why-card {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 12px;
+    flex: 1 1 180px;
+    /* Allow flex grow/shrink */
+    justify-content: center;
+    /* Keep content centered in its flex box? No, left align content, but card is centered in grid? */
+    /* Actually, user said: "Align blog cards in row format (image + content side-by-side)" - Wait, that was Blog. */
+    /* For Why Medingen: "Ensure icons are evenly distributed... Flex with justify-content: center or grid" */
+    /* Let's stick to Grid for strict columns or Flex with easy wrapping. Grid is safer for "equal spacing". */
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+    justify-items: center;
+    /* Center items in their cells */
+}
+
+.why-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    /* Fill grid cell */
+    justify-content: flex-start;
+    /* Left align content within the centered cell context? */
+    /* Should probably just be left aligned content. */
+}
+
+
+/* Re-evaluating based on "Align... heading to exact horizontal center... Center the entire icons + text row container" */
+
+.why-medingen-section {
+    padding: 24px 0 80px 0;
+    width: 100%;
+}
+
+.why-medingen {
+    padding: 0 20px;
+    /* Container padding */
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Adjust for larger screens to center content if they don't fill width? */
+/* Actually 6 items * min-width might be wider than screen. */
+
+.why-card-title {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #000;
+    margin: 0;
+}
+
+.why-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.why-icon {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.why-card-text {
+    display: none;
+}
+
+/* Specific spacing for the 5th card ("Prescription Upload Support") to prevent overlap with the phone image */
+@media (min-width: 1281px) {
+    .why-grid .why-card:nth-child(5) {
+        margin-right: 20px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+    .why-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-medingen-section {
+        padding: 20px 0;
+    }
+
+    .section-title-1 {
+        font-size: 28px;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .why-card {
+        background: #F9FAFB;
+        padding: 12px;
+        border-radius: 12px;
+        justify-content: flex-start;
+    }
+
+    .why-icon-wrapper {
+        width: 32px;
+        height: 32px;
+    }
+
+    .why-card-title {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,62 @@
+.featured-brands-section {
+    padding: 24px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.featured-brands-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.featured-brands-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Outfit", Helvetica, sans-serif;
+}
+
+.featured-brands-swiper {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.brand-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    /* Increased height for uniformity */
+}
+
+.brand-logo {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.brand-logo:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .featured-brands-section {
+        padding: 16px 16px;
+    }
+
+    .featured-brands-title {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .brand-slide {
+        height: 100px;
+    }
+
+    .brand-logo {
+        max-height: 80px;
+    }
+}

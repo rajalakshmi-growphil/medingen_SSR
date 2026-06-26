@@ -1,0 +1,55 @@
+.privacy-policy {
+    margin: 20px;
+    font-family: "Outfit", Helvetica, sans-serif;
+}
+
+.privacy-policy h1 {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.privacy-policy p, .privacy-policy li {
+    font-size: 16px;
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.privacy-policy h2 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.privacy-policy ol {
+    padding-left: 20px;
+}
+
+.privacy-policy ol li {
+    margin-bottom: 10px;
+}
+
+.privacy-policy .l1 > li > *:first-child:before {
+    counter-increment: c1;
+    content: counter(c1, decimal)". ";
+    font-weight: bold;
+}
+
+.privacy-policy .l2 > li > *:first-child:before,
+.privacy-policy .l3 > li > *:first-child:before,
+.privacy-policy .l4 > li > *:first-child:before,
+.privacy-policy .l5 > li > *:first-child:before,
+.privacy-policy .l6 > li > *:first-child:before,
+.privacy-policy .l7 > li > *:first-child:before {
+    counter-increment: c2;
+    content: counter(c1, decimal)"."counter(c2, decimal)" ";
+    font-weight: normal;
+}
+
+.privacy-back-button {
+    text-decoration: underline;
+    cursor: pointer;
+}

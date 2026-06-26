@@ -1,0 +1,179 @@
+.get-started-section {
+    padding: 0 5%;
+    padding-top: 20px;
+    margin-top: 60px;
+    max-width: 1400px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.get-started-banner {
+    background: linear-gradient(90deg, #9D80FF 0%, #CDB2FF 100%);
+    border-radius: 32px;
+    border-bottom-right-radius: 0;
+    padding: 46px 80px;
+    color: #08080a;
+    position: relative;
+    overflow: visible;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 260px;
+}
+
+.get-started-content {
+    flex: 1;
+    z-index: 3;
+    max-width: 58%;
+}
+
+.get-started-title {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #08080a;
+    line-height: 1.06;
+}
+
+.get-started-subtext {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 600;
+    max-width: 520px;
+}
+
+.get-started-highlight {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 16px;
+    color: #000;
+}
+
+.get-started-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.get-started-btn {
+    height: 46px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.get-started-phones {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1200px;
+    height: auto;
+    z-index: 4;
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: none;
+}
+
+.get-started-phones .iphone-svg {
+    width: 420px;
+    height: auto;
+    filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.18));
+}
+
+.iphone-svg {
+    opacity: 1 !important;
+    background: none !important;
+    animation: none !important;
+}
+
+.desktop-only {
+    display: flex !important;
+}
+
+@media (max-width: 1280px) {
+    .get-started-banner {
+        padding: 40px 60px;
+    }
+
+    .get-started-content {
+        max-width: 55%;
+    }
+
+    .get-started-title {
+        font-size: 32px;
+    }
+
+    .get-started-phones {
+        right: 4%;
+    }
+
+    .get-started-phones .iphone-svg {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .get-started-banner {
+        padding: 40px 40px;
+    }
+
+    .get-started-content {
+        max-width: 55%;
+    }
+
+    .get-started-phones {
+        width: 100%;
+        right: 20px;
+    }
+
+    .get-started-phones .iphone-svg {
+        width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .get-started-section {
+        padding: 20px 5%;
+        /* Maintain vertical padding and consistent side spacing */
+        box-sizing: border-box;
+    }
+
+    .get-started-banner {
+        padding: 30px 20px;
+        text-align: center;
+        border-radius: 24px;
+        flex-direction: column;
+    }
+
+    .get-started-content {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .get-started-title {
+        font-size: 28px;
+    }
+
+    .get-started-subtext {
+        font-size: 14px;
+    }
+
+    .get-started-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+}

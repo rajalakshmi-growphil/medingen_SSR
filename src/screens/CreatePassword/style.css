@@ -1,0 +1,340 @@
+.create-password-container {
+    background-color: #ffffff;
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.create-password-container .login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.create-password-container .login-box {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+  /* Overlay section */
+  .create-password-container .password-overlay {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .create-password-container .background-image {
+    height: 110px;
+    width: 78px;
+  }
+  
+  .create-password-container .header-section {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .create-password-container .header-title {
+    color: #181818;
+    font-family: "Outfit", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  
+  .create-password-container .header-subtitle {
+    color: #000000;
+    font-family: "Outfit", Helvetica;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  
+  /* Password section */
+  .create-password-container .password-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .create-password-container .password-label {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .create-password-container .password-label-text {
+    color: #000000;
+    font-family: "Outfit", Helvetica;
+    font-size: 12px;
+  }
+  
+  .create-password-container .password-input-wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #eff1f4;
+    border-radius: 8px;
+    padding: 5px 16px;
+  }
+  
+  .create-password-container .password-input {
+    flex: 1;
+    color: #1e1e1e;
+    font-family: "Outfit", Helvetica;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .create-password-container .toggle-visibility-icon {
+    height: 20px;
+    width: 21px;
+    cursor: pointer;
+  }
+  
+  .create-password-container .forgot-password-link {
+    margin-top: 10px;
+  }
+  
+  .create-password-container .forgot-password-text {
+    color: #000000;
+    font-family: "Outfit", Helvetica;
+    font-size: 12px;
+    text-decoration: underline;
+  }
+  
+  /* save-password button section */
+  .create-password-container .save-password-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .create-password-container .save-password-button {
+    background-color: #1e1e1e;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 18px 24px;
+    gap: 16px;
+  }
+  
+  .create-password-container .save-password-button-text {
+    color: #ffffff;
+    font-family: "Outfit", Helvetica;
+    font-size: 20px;
+  }
+  
+  .create-password-container .save-password-button-icon {
+    height: 7.37px;
+    width: 25px;
+  }
+  
+  /* Create account section */
+  .create-password-container .create-account-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+  }
+  
+  .create-password-container .create-account-button {
+    background-color: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 18px 24px;
+    gap: 8px;
+  }
+  
+  .create-password-container .create-account-text {
+    color: #1e1e1e;
+    font-family: "Outfit", Helvetica;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  
+  .create-password-container .skip-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+  }
+  
+  .create-password-container .skip-button {
+    background-color: #f9f2ff;
+    color: #151515;
+    font-family: "Lato-SemiBold", Helvetica;
+    font-size: 14px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  
+  
+  .create-password-container .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .create-password-container .ellipse {
+    align-self: flex-end;
+    height: 110px;
+    right: unset;
+    position: absolute;
+    top: 70px;
+    width: 78px;
+  
+  }
+  
+  .create-password-container .title {
+    color: #181818;
+    font-family: "Outfit", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    z-index: 2;
+  }
+  
+  .create-password-container .subtitle {
+    color: #181818;
+    font-family: "Outfit", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: 3;
+  }
+ 
+  
+.create-password-container .separator {
+  width: 100%;
+  height: 1px;
+}
+
+.create-password-container .continue-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.create-password-container .or-text {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 14px;
+  text-align: center;
+}
+
+.create-password-container .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.create-password-container .icon-wrapper {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-password-container .icon {
+  width: 32px;
+  height: 32px;
+}
+
+.create-password-container .button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.create-password-container .continue-button {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.create-password-container .button-icon {
+  width: 20px;
+}
+  
+
+.create-password-container .login-splash{
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .create-password-container {
+    background-color: #F9F7FF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .create-password-container .login-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+  }
+  .create-password-container .login-container {
+    justify-content: center;
+  }
+  .create-password-container .login-splash {
+    width: 50%;
+    display: block;
+    height: 100%;
+  }
+  .create-password-container .login-box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-password-container {
+    padding: 16px;
+  }
+}

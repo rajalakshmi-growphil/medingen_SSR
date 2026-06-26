@@ -1,0 +1,1201 @@
+.search-view-medicine p {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 10px;
+
+}
+
+.search-view-medicine li {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.text-wrapper-12 {
+  color: #343e4d80;
+  font-family: "Outfit", Helvetica;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.search-view-medicine {
+  background-color: #ffffff;
+  height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.search-view-medicine .img {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.search-view-medicine .frame-4 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.search-view-medicine .text-wrapper-3 {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 21.5px;
+  margin-top: -1px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.search-view-medicine .frame-99 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.search-view-medicine .frame-wrapper {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.search-view-medicine .frame-1011 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.search-view-medicine .frame-11 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  width: 70%;
+}
+
+.search-view-medicine .text-wrapper-9 {
+  color: #222222;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.text-wrapper-9-new {
+  color: #222222;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.search-view-medicine .text-wrapper-10 {
+  color: #8c8c8c;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.search-view-medicine .contains-PARACETAMOL {
+  color: #8c8c8c;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.search-view-medicine .span {
+  font-weight: 300;
+}
+
+.search-view-medicine .frame-12 {
+  align-items: flex-end;
+  background-color: #e9f5ff;
+  border-radius: 8px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+}
+
+.search-view-medicine .frame-13 {
+  align-items: flex-end;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  position: relative;
+}
+
+.search-view-medicine .frame-141 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.search-view-medicine .frame-151 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  justify-content: center;
+  position: relative;
+}
+
+.search-view-medicine .text-wrapper-11 {
+  color: #222222;
+  font-family: "Outfit", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.text-wrapper-11-new{
+
+}
+
+.search-view-medicine .text-wrapper-11 span {
+  color: #343E4D80;
+  font-family: "Outfit", Helvetica;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.search-view-medicine .text-wrapper-12 {
+  color: #222222;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.search-view-medicine .group-3 {
+  height: auto;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.search-view-medicine .frame-16 {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 19px;
+  width: 100%;
+  justify-content: center;
+}
+
+.search-view-medicine .rectangle-2 {
+  background-color: #f8f9fa;
+  height: 169px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  border: 1.93px solid #f0f1f5;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.search-view-medicine .frame-17 {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+  left: 0;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-view-medicine .rectangle-3 {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+.search-view-medicine .rectangle-4 {
+  background-color: #dadada;
+  border-radius: 8px;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+.search-view-medicine .description {
+  line-height: 2;
+}
+
+.search-view-medicine .frame-18 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.search-view-medicine .rectangle-5 {
+  height: 32px;
+  position: relative;
+  width: 193px;
+}
+
+.search-view-medicine .frame-19 {
+  align-items: center;
+  display: inline-flex;
+  gap: 4px;
+  position: relative;
+  background-color: #e9f6ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: calc(100% - 40px);
+  justify-content: center;
+}
+
+.search-view-medicine .FLAT-off {
+  color: #1e1e1e;
+  font-family: "Outfit", Helvetica;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.search-view-medicine .text-wrapper-13 {
+  color: #1e1e1e;
+  font-family: "Outfit", Helvetica;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+.tab-container {
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  
+
+}
+
+
+
+.section-wrapper {
+  scroll-margin-top: 6rem;
+  width: 98%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+  position: sticky;
+}
+
+.tab-content {
+  line-height: 1.6;
+}
+
+.search-view-medicine .tab-container {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 20px;
+  width: 100%;
+  /* padding: 0 10px; */
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.search-view-medicine .tab-container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.search-view-medicine .tab-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.search-view-medicine::-webkit-scrollbar {
+  display: none;
+}
+
+.search-view-medicine .section-head {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.search-view-medicine .tab-name {
+  font-size: 13px;
+  color: #000000;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0.5px solid grey;
+}
+.search-view-medicine .tab-name.active {
+  background-color: #ffffff;
+  color: #020202;
+}
+
+
+.search-view-medicine .tab-container .active {
+  background-color: #E0DEDE;
+}
+
+.search-view-medicine .frame-20 {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto 30px auto;  
+  /* padding: 16px; */
+}
+
+.search-view-medicine .section-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+}
+
+
+.search-view-medicine .frame-21 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: -6px;
+  position: relative;
+  width: 100%;
+}
+
+.search-view-medicine .frame-22 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  background-color: #F9FAFB;
+  border: 1px solid #F0F1F5;
+  padding: 20px;
+  border-radius: 8px;
+  width: calc(100% - 32px);
+}
+
+.search-view-medicine .text-wrapper-141 {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 18.8px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.search-view-medicine .frame-23 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.search-view-medicine .drug-composition {
+  color: #8c8c8c;
+  font-family: "Outfit", Helvetica;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: 291px;
+}
+
+.search-view-medicine .p {
+  color: #8c8c8c;
+  font-family: "Outfit", Helvetica;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 291px;
+}
+
+.search-view-medicine .frame-24 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative;
+}
+
+.search-view-medicine .text-wrapper-151 {
+  color: #0c87e8;
+  font-family: "Outfit", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-decoration: underline;
+  width: fit-content;
+}
+
+.search-view-medicine .vector {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 15px;
+}
+
+.search-view-medicine .MRP-rs-rs-per {
+  color: #8c8c8c;
+  font-family: "Outfit", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 291px;
+}
+
+.search-view-medicine .text-wrapper-16 {
+  font-weight: 600;
+}
+
+.search-view-medicine .text-wrapper-17 {
+  font-family: "Outfit", Helvetica;
+  font-weight: 700;
+}
+
+.search-view-medicine .text-wrapper-18 {
+  font-family: "Outfit", Helvetica;
+  font-weight: 300;
+}
+
+.search-view-medicine .text-wrapper-19 {
+  color: #8c8c8c;
+  font-family: "Outfit", Helvetica;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 291px;
+}
+
+.search-view-medicine .slideimg {
+  height: 100%;
+}
+
+.search-view-medicine .slider {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  z-index: 999;
+}
+
+.search-view-medicine .overlap-3 {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-view-medicine .add-to-cart {
+  align-items: center;
+  border: 1px solid #5d399b;
+  border-radius: 24px;
+  display: inline-flex;
+  justify-content: center;
+  padding: 8px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.search-view-medicine .add-button {
+  color: #5d399b;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search-view-medicine .product-list {
+  background-color: #ffffff;
+  border-radius: 24px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-view-medicine .product-list .product-item {
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #eff1f4;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  overflow: hidden;
+  padding: 5px 5px;
+  position: relative;
+  justify-content: space-between;
+  width: 97%;
+  margin-bottom: 8px;
+}
+
+.search-view-medicine .product-list .product-info {
+  position: relative;
+  width: 100%;
+  align-self: center;
+}
+
+.search-view-medicine .savings-div {
+  background-color: #C8FFB5;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.search-view-medicine .instead-of {
+  background: url("insteadof.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  font-size: 10px;
+  align-items: center;
+}
+
+.search-view-medicine .product-list .price-info {
+  align-items: center;
+  display: inline-flex;
+  gap: 2.56px;
+  justify-content: center;
+  position: relative;
+}
+
+.search-view-medicine .product-list .original-price {
+  color: #222222;
+  font-family: "Outfit", Helvetica;
+  font-size: 6.4px;
+  font-weight: 500;
+  text-decoration: line-through;
+  white-space: nowrap;
+  margin-right: 4px;
+}
+
+.search-view-medicine .product-list .discounted-price {
+  color: #222222;
+  font-family: "Outfit", Helvetica;
+  font-size: 12.8px;
+  font-weight: 500;
+}
+
+.search-view-medicine .product-list .price-tag {
+  align-items: center;
+  background-color: #c8ffb5;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 2px 5px;
+  position: relative;
+}
+
+.search-view-medicine .product-list .price-discount {
+  color: #222222;
+  font-family: "Outfit", Helvetica;
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.search-view-medicine .product-list .product-image {
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  width: 52px;
+  left: 0;
+}
+
+.search-view-medicine .product-list .product-name {
+  color: #000000;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+
+.search-view-medicine .product-list .alternate-product-name {
+  color: #000000;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+
+.search-view-medicine .compare-button {
+  display: none;
+}
+
+.search-view-medicine .product-list .product-manufacturer {
+  color: #000000;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  position: relative;
+}
+
+ .frame-27 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: fixed;
+    bottom: 100px;
+    right: 4vw;
+
+    background-color: #ffffff;
+    border: 1px solid #5d399b;
+    border-radius: 32px;
+    padding: 10px 16px;
+
+    width: auto;
+    white-space: nowrap;
+    z-index: 9999;
+  }
+
+  .frame-27 .img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .text-wrapper-24 {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+
+.text-wrapper-24 {
+  color: #5d399b;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.search-view-medicine .screen-view {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 0rem;
+  padding: 5%;
+  padding-top: 1rem;
+  overflow-y: auto;
+  margin-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.search-view-medicine .screen-flex-left-align {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.search-view-medicine .screen-view-item {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-view-medicine .div-head {
+  width: calc(100% - 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-view-medicine .frame-25 {
+  display: flex;
+  gap: 10px;
+  margin-left: 5%;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.search-view-medicine .span {
+  font-weight: 300;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.arrow-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: 16px;
+  width: 16px;
+}
+
+.arrow-icon.collapsed {
+  transform: rotate(180deg);
+}
+
+.happy-customers {
+  width: 85%;
+  display: none;
+}
+
+.search-view-medicine .hor-flex {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.flex-left-align {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.med-desc {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+}
+
+.search-view-medicine .product-name,
+.search-view-medicine .price-box {
+  display: none;
+}
+
+.search-view-medicine .swiper {
+  width: 100%;
+  height: auto;
+  z-index: 99;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-image-popup {
+  width: 90vw !important;
+  max-width: none !important;
+  height: auto !important;
+  padding: 0 !important;
+  position: relative;
+}
+
+.fullscreen-image-popup img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+.custom-close-button:hover {
+  opacity: 0.7;
+}
+
+.rectangle-3 {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  height: 2px;
+  width: 24px;
+}
+
+.rectangle-4 {
+  background-color: #dadada;
+  border-radius: 8px;
+  height: 2px;
+  width: 24px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+  .search-view-medicine .frame-99 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .search-view-medicine .text-wrapper-23 {
+    display: none;
+  }
+
+  .search-view-medicine .group-3 {
+    margin-left: 25px;
+  }
+
+  .happy-customers {
+    width: 85%;
+    display: block;
+  }
+
+  .search-view-medicine .frame-16 {
+    max-width: 300px;
+    overflow: hidden;
+  }
+
+  .search-view-medicine .group-3 {
+    width: 33%;
+  }
+
+  .search-view-medicine .med-desc {
+    width: 66%;
+  }
+
+  .search-view-medicine .hor-flex {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .flex-left-align {
+    width: 73%;
+  }
+
+  .right-align {
+    width: 27%;
+  }
+
+  .search-view-medicine .rectangle-4 {
+    cursor: pointer;
+  }
+
+  .search-view-medicine .product-name {
+    margin-left: 5%;
+  }
+
+  .search-view-medicine p {
+    display: block;
+    font-size: 15px;
+  }
+
+  .search-view-medicine .text-wrapper-19 {
+    font-size: 11px;
+  }
+
+  .search-view-medicine .text-wrapper-141 {
+    font-size: 20px;
+  }
+
+  .search-view-medicine .frame-21 {
+    gap: 20px;
+  }
+
+  .search-view-medicine .frame-11,
+  .search-view-medicine .frame-12 {
+    display: none;
+  }
+
+  .search-view-medicine .text-wrapper-9 {
+    font-size: 20px;
+  }
+
+  .text-wrapper-9-new {
+    font-size: 22px;
+    margin-top: -7px;
+  }
+
+  .search-view-medicine .contains-PARACETAMOL {
+    font-size: 14px;
+  }
+
+  .search-view-medicine .price-box {
+    background-color: #e9f6ff;
+    width: fit-content;
+    margin-left: 5%;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+
+  .search-view-medicine .frame-19 {
+    width: 85%;
+    margin-left: 5%;
+  }
+
+  .search-view-medicine .med-desc {
+    display: flex;
+  }
+
+  .frame-27 {
+    display: none;
+  }
+
+  .search-view-medicine .product-name,
+  .search-view-medicine .price-box {
+    display: block;
+  }
+
+  .search-view-medicine .compare-button {
+    display: flex;
+  }
+
+  .search-view-medicine .screen-view {
+    margin-bottom: 20px;
+  }
+}
+
+.image-viewer .modal-overlay,
+.ReactModalPortal .modal-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-viewer .modal-content {
+  background: white;
+  border-radius: 10px;
+  max-width: 90%;
+  width: 800px;
+  max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.image-viewer .modal-body {
+  display: flex;
+  flex-direction: row;
+  max-height: 90vh;
+}
+
+.image-list {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.thumbnail {
+  width: calc(100%-10px);
+  margin: 5px 0;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.thumbnail.selected {
+  border-color: #007bff;
+}
+
+.selected-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  touch-action: pan-x pan-y;
+}
+
+.selected-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.selected-image:hover img {
+  transform-origin: var(--mouse-x) var(--mouse-y);
+  transform: scale(2);
+}
+
+.span-new-h3 {
+  color: #8c8c8c;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 100%;
+  overflow-wrap: anywhere;
+  margin: 0px;
+  margin-top: 1px;
+}
+
+.mrp-css {
+  color: #343E4D80;
+  font-family: "Outfit", Helvetica;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin: 0;
+  margin-top: 7px;
+  position: relative;
+  width: fit-content;
+}
+
+.mrp-rupees{
+  font-size: 20px;
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  .image-viewer .modal-body {
+    flex-direction: column-reverse;
+  }
+
+  .image-list {
+    flex: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .thumbnail {
+    width: 30%;
+    margin: 5px;
+  }
+
+  .selected-image {
+    flex: none;
+    margin-top: 10px;
+  }
+}
+
+.image-viewer .modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1001;
+}
+
+.image-viewer .close-button:hover {
+  color: #f00;
+}
+

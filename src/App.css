@@ -1,0 +1,249 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+
+body {
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+
+#root {
+  overflow: hidden;
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+.App {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100dvh;
+  overscroll-behavior: none;
+}
+
+p {
+  display: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  unicode-bidi: unset;
+}
+
+.swal2-html-container p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.footer {
+  min-height: 50px;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.slide-left-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+.slide-left-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-left-exit-active {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+/* App.css */
+.slide-enter {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+.slide-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+@media only screen and (orientation: portrait) {
+
+  body {
+    width: 100%;
+    height: 100dvh;
+  }
+}
+
+.LandingPage {
+  height: 100dvh;
+  overflow-y: auto;
+}
+
+.delete-form {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.delete-form div {
+  margin-bottom: 15px;
+}
+
+.delete-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.delete-form input[type="text"],
+.delete-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.delete-form input[type="text"]:focus,
+.delete-form textarea:focus {
+  border-color: #007bff;
+}
+
+.delete-form textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.delete-form button[type="submit"] {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.delete-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.delete-form .landing-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-form .landing-logo img {
+  height: 50px;
+}
+
+* {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* Optional: Hide content or provide a message if landscape mode is detected 
+@media only screen and (orientation: landscape) {
+  .App {
+    display: none; 
+  }
+}*/
+
+@media only screen and (max-width: 800px) {
+
+  .footer,
+  .footer-bottom {
+    display: none !important;
+  }
+
+  .LandingPage .footer,
+  .dashboard .footer {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .App {
+    display: block;
+    overflow-y: auto;
+    width: 100%;
+    height: 100dvh;
+  }
+}

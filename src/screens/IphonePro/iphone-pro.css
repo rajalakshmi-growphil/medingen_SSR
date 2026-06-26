@@ -1,0 +1,22 @@
+.iphone-pro {
+  height: 924px;
+  width: 446px;
+}
+
+.iphone-pro .overlap-group {
+  background-image: url(./iphone-12-pro.png);
+  background-size: 100% 100%;
+  height: 909px;
+  left: 9px;
+  position: relative;
+  top: 7px;
+  width: 428px;
+}
+
+.iphone-pro .screen-iphone-pro {
+  height: 873px;
+  left: 17px;
+  position: absolute;
+  top: 18px;
+  width: 381px;
+}

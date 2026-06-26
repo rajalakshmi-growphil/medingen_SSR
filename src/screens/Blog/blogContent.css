@@ -1,0 +1,118 @@
+.styled-blog-content {
+  width: 100%;
+  line-height: 1.75;
+  color: #1c1c1c;
+  font-size: 16.5px;
+}
+
+.styled-blog-content p {
+  margin: 0 0 1rem;
+}
+
+.styled-blog-content h1,
+.styled-blog-content h2,
+.styled-blog-content h3,
+.styled-blog-content h4,
+.styled-blog-content h5,
+.styled-blog-content h6 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.styled-blog-content h2 {
+  font-size: 1.6rem;
+}
+
+.styled-blog-content h3 {
+  font-size: 1.35rem;
+}
+
+.styled-blog-content h4 {
+  font-size: 1.15rem;
+}
+
+.styled-blog-content pre,
+.styled-blog-content code {
+  background: #f7f7f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.styled-blog-content pre {
+  padding: 14px 16px;
+  overflow: auto;
+}
+
+.styled-blog-content code {
+  padding: 2px 6px;
+}
+
+.styled-blog-content ul,
+.styled-blog-content ol {
+  padding-left: 1.4rem;
+  margin: 0.6rem 0 1rem;
+}
+
+.styled-blog-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/* Skeleton Loader Styles */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #e0e0e0 25%,
+    #f2f2f2 37%,
+    #e0e0e0 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: 6px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.blog-skeleton-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Image placeholder */
+.skeleton-image {
+  width: 100%;
+  height: 300px;
+}
+
+/* Title placeholder */
+.skeleton-title {
+  width: 70%;
+  height: 28px;
+}
+
+/* Paragraph lines */
+.skeleton-line {
+  width: 100%;
+  height: 16px;
+}
+
+.skeleton-line.short {
+  width: 60%;
+}
+
+/* Sidebar placeholder */
+.skeleton-sidebar {
+  width: 100%;
+  height: 200px;
+  margin-top: 1.5rem;
+}

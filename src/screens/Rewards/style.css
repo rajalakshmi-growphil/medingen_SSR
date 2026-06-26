@@ -1,0 +1,831 @@
+.rewards {
+  background-color: #ffffff;
+  width: 100%;
+  height: calc(100dvh);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.rewards .frame {
+  align-items: center;
+  display: flex;
+  gap: 13px;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+}
+
+.rewards .reward-content{
+  height: 100dvh;
+  overflow-y: auto;
+}
+
+.rewards .frame-wrapper {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #eff1f4;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #0000001a;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  overflow: hidden;
+  padding: 11px 8px;
+  position: relative;
+}
+
+.rewards .div {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 26px;
+  position: relative;
+}
+
+.rewards .rectangle {
+  height: 152px;
+  object-fit: cover;
+  position: relative;
+  width: 310px;
+}
+
+.rewards .frame-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.rewards .text-wrapper {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 18.8px;
+  margin-top: -1px;
+  position: relative;
+  width: 295px;
+}
+
+.rewards .p {
+  color: #8c8c8c;
+  font-family: "Outfit", Helvetica;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 295px;
+}
+
+.rewards .div-wrapper {
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 40px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 5px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 18px 24px;
+  position: relative;
+}
+
+.rewards .frame-3 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  margin-bottom: -5.5px;
+  margin-top: -5.5px;
+  position: relative;
+}
+
+.rewards .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.rewards .vector {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 8px;
+}
+
+.rewards .frame-4 {
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #eff1f4;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #0000001a;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  overflow: hidden;
+  padding: 11px 8px;
+  position: relative;
+}
+
+.rewards .img {
+  align-self: stretch;
+  height: 96px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.rewards .text-wrapper-3 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #181818;
+  display: -webkit-box;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  height: 44px;
+  letter-spacing: 0;
+  line-height: 21.5px;
+  margin-top: -1px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  width: 139px;
+}
+
+.rewards .text-wrapper-4 {
+  color: #8c8c8c;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 139px;
+}
+
+.rewards .frame-5 {
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 40px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px 20px;
+  position: relative;
+}
+
+.rewards .frame-6 {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+  height: 16px;
+  position: relative;
+}
+
+.rewards .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -0.5px;
+  position: relative;
+  width: fit-content;
+}
+
+.rewards .rectangle-2 {
+  height: 96px;
+  object-fit: cover;
+  position: relative;
+  width: 138px;
+}
+
+.rewards .frame-7 {
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 40px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px 20px;
+  position: relative;
+  width: 139px;
+}
+
+.rewards .frame-8 {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+  height: 16px;
+  margin-left: -1px;
+  margin-right: -1px;
+  position: relative;
+}
+
+.rewards .overlap {
+  background: url(./bg.svg);
+  height: 133px;
+  left: -86px;
+  position: absolute;
+  top: -23px;
+  z-index: 98;
+  width: 532px;
+}
+
+.rewards .group-wrapper {
+  background-color: #f6f2fe;
+  height: 133px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 532px;
+}
+
+.rewards .group {
+  height: 133px;
+  position: relative;
+}
+
+.rewards .group-2 {
+  height: 133px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 265px;
+}
+
+.rewards .rectangle-3 {
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 66px;
+}
+
+.rewards .overlap-group {
+  height: 134px;
+  left: 66px;
+  position: absolute;
+  top: -1px;
+  width: 199px;
+}
+
+.rewards .rectangle-4 {
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 66px;
+}
+
+.rewards .rectangle-5 {
+  height: 66px;
+  left: 66px;
+  position: absolute;
+  top: 67px;
+  width: 66px;
+}
+
+.rewards .rectangle-6 {
+  border: 1.97px solid;
+  border-color: #ffffff;
+  border-radius: 0px 163.93px 163.93px 0px;
+  height: 68px;
+  left: 65px;
+  position: absolute;
+  top: 0;
+  width: 68px;
+}
+
+.rewards .group-3 {
+  background-image: url(./union.svg);
+  background-size: 100% 100%;
+  height: 67px;
+  left: 132px;
+  position: absolute;
+  top: 1px;
+  width: 66px;
+}
+
+.rewards .group-4 {
+  height: 66px;
+  left: 132px;
+  position: absolute;
+  top: 68px;
+  width: 66px;
+}
+
+.rewards .ellipse {
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 67px;
+  width: 66px;
+}
+
+.rewards .group-5 {
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 66px;
+  width: 66px;
+}
+
+.rewards .group-6 {
+  height: 133px;
+  left: 267px;
+  position: absolute;
+  top: 0;
+  width: 265px;
+}
+
+.rewards .group-7 {
+  background-image: url(./image.svg);
+  background-size: 100% 100%;
+  height: 67px;
+  left: 132px;
+  position: absolute;
+  top: 1px;
+  width: 66px;
+}
+
+.rewards .frame-9 {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 8px;
+  left: 342px;
+  position: absolute;
+  top: 63px;
+}
+
+.rewards .img-wrapper {
+  background-color: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0px 0px 10px #0000001a;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.rewards .img-2 {
+  height: 20px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
+
+.rewards .image {
+  height: 41px;
+  left: 114px;
+  position: absolute;
+  top: 65px;
+  width: 60px;
+}
+
+.rewards .text-wrapper-6 {
+  color: #181818;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 157px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 74px;
+  width: 57px;
+}
+
+.rewards .frame-10 {
+  align-items: center;
+  display: inline-flex;
+  gap: 253px;
+  left: 102px;
+  position: absolute;
+  top: 33px;
+}
+
+.rewards .text-wrapper-7 {
+  color: #000000;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.rewards .frame-11 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative;
+}
+
+.rewards .solid-system-battery {
+  height: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.rewards .line-system-wifi {
+  height: 15px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 15px;
+}
+
+.rewards .overlap-wrapper {
+  height: 40px;
+  position: relative;
+  background-color: white;
+  z-index: 99;
+  width: 92%;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.rewards .overlap-2 {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #00000014;
+  border-radius: 24px;
+  height: 40px;
+  position: relative;
+  width: 327px;
+}
+
+.rewards .overlap-group-2 {
+  background-color: #1e1e1e;
+  border-radius: 24px;
+  height: 40px;
+  left: 158px;
+  position: absolute;
+  top: 0;
+  width: 168px;
+}
+
+.rewards .text-wrapper-8 {
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 65px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 13px;
+}
+
+.rewards .text-wrapper-9 {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  width: 50%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+}
+
+.rewards .text-wrapper-16 {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 21.5px;
+  white-space: nowrap;
+  margin: 15px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.rewards .recent-transaction {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.rewards .transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 15px;
+}
+
+.rewards .transaction-item {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the flex container */
+  justify-content: space-between;
+  height: 60px; /* Adjust height as needed */
+  width: calc(100% - 20px); /* Make full width of the parent container */
+  padding: 10px; /* Add padding for spacing */
+  border: 1px solid #e0e0e0; /* Optional: Add border for visual separation */
+  border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  background-color: #f9f9f9; /* Optional: Add background color */
+}
+
+.rewards .transaction-icon {
+  width: 40px; /* Adjust icon size as needed */
+  height: 40px; /* Adjust icon size as needed */
+  border-radius: 8px; /* Rounded corners for the icon */
+  background-color: #ccc; /* Placeholder color */
+  margin: auto;
+  margin-right: 10px; /* Space between icon and text */
+  
+}
+
+.rewards .transaction-icon-primary {
+  background-color: #e9f5ff; /* Primary icon color */
+}
+
+.rewards .transaction-icon-secondary {
+  background-color: #ffedad; /* Secondary icon color */
+}
+
+.rewards .transaction-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allow info container to take available space */
+  margin: 0 10px; /* Space between info container and reward */
+}
+
+.rewards .transaction-description {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px; /* Space between description and date-time */
+}
+
+.rewards .transaction-date-time {
+  display: flex;
+  flex-direction: column;
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.rewards .transaction-date {
+  margin-bottom: 2px; /* Space between date and time */
+}
+
+.rewards .transaction-reward {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right; /* Align reward text to the right */
+  margin: auto;
+}
+
+
+/* Frame 11 styles */
+.rewards .frame-11 {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0px 0px 10px #0000001a;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  margin: 0px 20px 30px 20px;
+  padding: 10px;
+}
+
+/* Frame 12 styles */
+.rewards .frame-12 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.rewards .image-wrapper,
+.rewards .group-10,
+.rewards .group-11 {
+  background-color: #b2b5fa;
+  border-radius: 136px;
+  height: 56px;
+  position: relative;
+  width: 56px;
+}
+
+.rewards .group-10 {
+  background-color: #ffedad;
+}
+
+.rewards .group-11 {
+  background-color: #a8f9ff;
+}
+
+.rewards .image-2 {
+  height: 38px;
+  left: 9px;
+  object-fit: cover;
+  position: absolute;
+  top: 9px;
+  width: 38px;
+}
+
+.rewards .div-2,
+.rewards .expiring {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+}
+
+.rewards .span {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.rewards .text-wrapper-13 {
+  font-family: "Outfit", Helvetica;
+  font-weight: 600;
+}
+
+.rewards .container {
+  height: auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.info-container {
+  align-items: center;
+  display: inline-flex;
+  gap: 6px;
+  position: relative;
+  justify-content: center;
+  background: #e9f6ff;
+  margin-left: 7%;
+  width: 80%;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.info-container .icon-wrapper {
+  height: 18px;
+  position: relative;
+  width: 17px;
+}
+
+.info-container .icon-overlay {
+  height: 18px;
+  position: relative;
+  width: 15px;
+}
+
+.info-container .icon-circle {
+  background-color: #3c85b9;
+  border-radius: 7.5px;
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 15px;
+}
+
+.info-container .icon-text {
+  color: #ffffff;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  left: 6px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.info-container .info-text {
+  color: #1e1e1e;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 100%;
+}
+
+.rewards a {
+  text-decoration: none;
+}
+
+
+.rewards .header-container {
+  display: flex;
+  background: url(./bg.svg);
+  height: 12%;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.rewards .logo-image {
+  height: 40px; /* Adjust as needed */
+  width: auto;
+}
+
+.rewards .actions-container {
+  display: flex;
+  gap: 10px; /* Adjust spacing between icons as needed */
+}
+
+.rewards .action-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 32px;
+  box-shadow: 0px 0px 10px #0000001a;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.rewards .action-icon {
+  height: 24px; /* Adjust size of the icons as needed */
+  width: auto;
+}
+
+@media only screen and (min-width: 700px) {
+  .rewards .overlap-wrapper {
+    justify-content: flex-start;
+    margin-left: 5%;
+  }
+  .rewards .text-wrapper-16, .rewards .frame-11 {
+    text-align: left;
+    margin-left: 5%;
+  }
+  .rewards .frame-11{
+    justify-content: space-evenly;
+  }
+  .rewards .frame-12{
+    flex-direction: row;
+  }
+  .rewards .expiring, .rewards .div-2{
+    text-align: left;
+    margin-left: 20px;
+  }
+  .rewards .frame{
+    align-items: flex-start;
+    margin-left: 5%;
+  }
+  .rewards .transaction-list{
+    margin: 0 5% 5% 5%;
+  }
+}

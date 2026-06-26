@@ -1,0 +1,278 @@
+.order-payment {
+  background-color: #ffffff;
+  height: calc(100dvh);
+  overflow-y: auto;
+  width: 100%;
+  display: block;
+  flex-direction: column;
+}
+
+.order-payment .header {
+  height: 80px;
+  background-color: #f6f2fe;
+}
+
+.order-payment .margin-bottom{
+  margin-bottom: 110px;
+}
+
+.order-payment .header-content {
+  display: flex;
+  align-items: center;
+  padding: 30px 16px;
+}
+
+.order-payment .icon {
+  height: 24px;
+  width: 24px;
+}
+
+.order-payment .title {
+  font-family: "Outfit", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  color: #181818;
+  margin-left: 16px;
+}
+
+.order-payment .order-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 16px;
+}
+
+.order-payment .confirmation-message {
+  font-family: "Outfit", Helvetica;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--colorthemelighttext-colorbody-text);
+  text-align: center;
+}
+
+.order-payment .order-amount {
+  font-family: "Outfit", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  color: #50505080;
+  text-align: center;
+}
+
+.order-payment .available-coupons {
+  flex: 1;
+  margin: 16px;
+  margin-top: 0;
+}
+
+
+.coupon-code {
+  font-family: "Outfit", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.coupon-description {
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  color: #505050;
+  margin-top: 4px;
+}
+
+.order-payment .coupon-section {
+  margin: 16px;
+}
+
+.order-payment .coupon-option {
+  background-color: #f9fafb;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #ffffff14;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-payment .coupon-mig-box {
+  display: flex;
+  background: url(./rectangle-254.svg);
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.order-payment .coupon-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px;
+  gap: 10px;
+}
+
+.order-payment .checkbox {
+  border: 1px solid #222222;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+}
+
+.order-payment .coupon-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.order-payment .coupon-text p {
+  margin: 0;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+}
+
+.order-payment .balance {
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.order-payment .coupon-input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.order-payment .coupon-code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.order-payment .apply-button {
+  background-color: #000000;
+  border-radius: 0 6px 6px 0;
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-payment .apply-text {
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  color: #f5f5f5;
+}
+
+.order-payment .payment-action {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #0000001a;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.order-payment .payment-button {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 40px;
+  padding: 20px;
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.order-payment .payment-button .amount {
+  font-family: "Outfit", Helvetica;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.order-payment .arrow-icon {
+  margin-left: 24px;
+}
+
+.order-payment .coupon-input-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.order-payment .textbox {
+  height: 65%;
+  padding: 5px 15px;
+}
+
+.available-coupon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #ffffff14;
+  margin-bottom: 16px;
+  align-items: stretch;
+}
+
+.available-coupon .coupon-details {
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.coupon-code {
+  font-family: "Outfit", Helvetica;
+  font-size: 18px;
+  color: #000;
+}
+
+.coupon-description {
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  color: #666;
+}
+
+.coupon-applied {
+  margin-top: 10px;
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  color: #228b22;
+}
+
+.applied-code {
+  font-weight: bold;
+  color: #000;
+}
+
+.saved-amount {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.apply-button {
+  background-color: #000;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply-text {
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 700px) {
+  .order-payment .order-confirmation, .order-payment .coupon-section, .order-payment .available-coupons {
+    width: 90%;
+    margin: 0 5%;
+  }
+}

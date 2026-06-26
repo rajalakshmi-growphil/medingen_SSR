@@ -1,0 +1,212 @@
+/* General Styles */
+.policy-page {
+    background-color: #ffffff;
+    width: 100%;
+    max-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: calc(100dvh - 65px);
+    box-sizing: border-box;
+  }
+  
+  .policy-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+  
+  .policy-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: justify;
+  }
+  
+  .policy-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .policy-navigation {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .policy-navigation ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin: 0;
+  }
+  
+  .policy-navigation ul ul {
+    padding-left: 1.5rem;
+  }
+  
+  .policy-navigation ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .policy-navigation ul ul li {
+    margin-top: 0.8rem;
+  }
+  
+  .policy-navigation a {
+    text-decoration: none;
+    color: unset;
+  }
+  
+  .policy-navigation a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .text-wrapper-head {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .download-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .download-section .download-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-section .download-button:hover {
+    background-color: #333333;
+  }
+  
+  /* Table Styles */
+  .policy-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .policy-content th,
+  .policy-content td {
+    border: 1px solid #ddd;
+    padding: 12px;
+  }
+  
+  .policy-content th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .policy-content tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .policy-content tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+.policy-navigation .miglogo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .policy-navigation .download-the-app {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .policy-navigation .download-the-app {
+    display: none;
+  }
+  
+  .policy-navigation .button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .policy-navigation .continue-button {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: "Outfit", Helvetica;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    gap: 10px;
+  }
+
+  .pol-navigation-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #F9FAFB;
+  }
+
+  .policy-navigation .arrow-left img{
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .policy-navigation {
+      max-width: 100%;
+    }
+  
+    .download-section {
+      margin-top: 20px;
+    }
+   
+  }
+
+  /* Responsive Design */
+  @media only screen and (min-width: 700px) {
+    .policy-container {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+    }
+  
+    .policy-content {
+      width: 70%;
+    }
+  
+    .policy-navigation {
+      width: 25%;
+    }
+  
+    .policy-container {
+      padding: 25px 5%;
+    } .policy-navigation .download-the-app {
+        display: flex;
+      }
+  }
+  
+  

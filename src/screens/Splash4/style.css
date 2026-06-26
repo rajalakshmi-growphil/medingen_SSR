@@ -1,0 +1,195 @@
+.splash4 {
+  background-color: #ffffff;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+.splash4 .frame {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 11px;
+  left: 45px;
+  position: absolute;
+  top: 542px;
+}
+
+.splash4 .text-wrapper {
+  color: #181818;
+  font-family: "Outfit", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.splash4 .div {
+  color: #888888;
+  font-family: "Outfit", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  width: 289px;
+}
+
+.splash4 .frame-wrapper {
+  align-items: center;
+  background-color: #1e1e1e;
+  border-radius: 40px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 23px;
+  justify-content: center;
+  left: 65px;
+  overflow: hidden;
+  padding: 18px 24px;
+  position: absolute;
+  top: 712px;
+}
+
+.splash4 .frame-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  margin-bottom: -6.5px;
+  margin-top: -6.5px;
+  position: relative;
+}
+
+.splash4 .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Outfit", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.splash4 .img {
+  flex: 0 0 auto;
+  position: relative;
+  animation: moveArrow 1s linear infinite;
+
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.splash4 .overlap {
+  height: 361px;
+  left: 63px;
+  position: absolute;
+  top: 133px;
+  width: 227px;
+}
+
+.splash4 .group {
+  height: 356px;
+  left: 20px;
+  position: absolute;
+  top: 0;
+  width: 194px;
+}
+
+.splash4 .overlap-group {
+  height: 356px;
+  position: relative;
+}
+
+.splash4 .rectangle {
+  background-color: #181818;
+  border-radius: 120px;
+  height: 355px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 191px;
+}
+
+.splash4 .rectangle-2 {
+  background-color: #181818;
+  border-radius: 120px;
+  height: 355px;
+  left: 3px;
+  position: absolute;
+  top: 1px;
+  width: 191px;
+}
+
+.splash4 .rectangle-3 {
+  background-color: #f4d979;
+  border-radius: 0px 0px 120px 120px;
+  height: 261px;
+  left: 20px;
+  position: absolute;
+  top: 94px;
+  width: 191px;
+}
+
+.splash4 .image {
+  height: 165px;
+  left: 34px;
+  object-fit: cover;
+  position: absolute;
+  top: 160px;
+  width: 165px;
+}
+
+.splash4 .ellipse {
+  background: linear-gradient(180deg, rgb(214.19, 180.33, 61.17) 0%, rgb(201.34, 150.25, 51.09) 100%);
+  border-radius: 13px;
+  height: 26px;
+  left: 0;
+  position: absolute;
+  top: 192px;
+  width: 26px;
+}
+
+.splash4 .ellipse-2 {
+  background: linear-gradient(180deg, rgb(214.19, 180.33, 61.17) 0%, rgb(201.34, 150.25, 51.09) 100%);
+  border-radius: 10px;
+  height: 20px;
+  left: 207px;
+  position: absolute;
+  top: 233px;
+  width: 20px;
+}
+
+.splash4 .ellipse-3 {
+  background: linear-gradient(180deg, rgb(214.19, 180.33, 61.17) 0%, rgb(201.34, 150.25, 51.09) 100%);
+  border-radius: 10.5px;
+  height: 21px;
+  left: 43px;
+  position: absolute;
+  top: 328px;
+  width: 21px;
+}
+
+.splash4 .ellipse-4 {
+  background: linear-gradient(180deg, rgb(214.19, 180.33, 61.17) 0%, rgb(201.34, 150.25, 51.09) 100%);
+  border-radius: 6px;
+  height: 12px;
+  left: 169px;
+  position: absolute;
+  top: 349px;
+  width: 12px;
+}

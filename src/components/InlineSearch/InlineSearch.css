@@ -1,0 +1,310 @@
+.inline-search-container {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.inline-search-bar {
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 4px 0 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    width: 100%;
+    cursor: text;
+}
+
+.inline-search-bar:hover,
+.inline-search-bar:focus-within {
+    border-color: #8B5CF6;
+}
+
+.inline-search-input {
+    flex: 1;
+    text-align: left;
+    color: #333;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.inline-search-input::placeholder {
+    color: #999;
+}
+
+.inline-search-button {
+    background-color: #8B5CF6;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.inline-search-button img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* Dropdown specific styles */
+.inline-search-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000000;
+    border: 1px solid #eee;
+    text-align: left;
+}
+
+.inline-search-dropdown-content {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+}
+
+.inline-loader {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-family: "Outfit", Helvetica, sans-serif;
+}
+
+.inline-error {
+    text-align: center;
+    padding: 20px;
+    color: #ef4444;
+    font-family: "Outfit", Helvetica, sans-serif;
+}
+
+.inline-no-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.inline-no-product-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1c1c1c;
+    margin-bottom: 12px;
+    font-family: "Outfit", Helvetica, sans-serif;
+}
+
+.inline-no-product-text span {
+    font-weight: 600;
+}
+
+.inline-whatsapp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7b4dff;
+    color: #fff;
+    border-radius: 50px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 8px;
+    width: fit-content;
+}
+
+.inline-whatsapp-btn:hover {
+    background-color: #6b3df5;
+}
+
+.inline-whatsapp-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.inline-suggestions-title {
+    color: #181818;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.5;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    text-align: left;
+}
+
+.inline-suggestion {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    gap: 12px;
+}
+
+.inline-suggestion:hover,
+.inline-salt-suggestion:hover {
+    background-color: #f9f9f9;
+}
+
+.inline-salt-suggestion {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    text-align: left;
+}
+
+.inline-product-name {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.4;
+    flex: 1;
+    padding-right: 12px;
+    text-align: left;
+}
+
+.inline-product-salt {
+    font-size: 12px;
+    color: #888;
+    font-family: "Outfit", Helvetica, sans-serif;
+    text-align: left;
+}
+
+.inline-product-pricing {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.inline-price {
+    white-space: nowrap;
+    font-weight: 600;
+    color: #000;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.inline-medicine-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.inline-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.inline-pagination button {
+    padding: 6px 12px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    transition: all 0.2s;
+}
+
+.inline-pagination button:hover:not(:disabled) {
+    background: #f5f5f5;
+    border-color: #ccc;
+}
+
+.inline-pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background: #fdfdfd;
+}
+
+/* Specific styling for the header search bar integration */
+.header-row-search .inline-search-bar {
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 4px 0 16px;
+}
+
+.header-row-search .inline-search-dropdown {
+    top: calc(100% + 10px);
+    width: 100%;
+}
+
+.header-row-search .inline-search-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.header-row-search .inline-search-button img {
+    width: 14px;
+    height: 14px;
+}
+
+.header-row-search .inline-search-input {
+    font-size: 14px;
+}
+
+/* Custom scrollbar for dropdown */
+.inline-search-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.inline-search-dropdown::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.inline-search-dropdown::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+
+.inline-search-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}

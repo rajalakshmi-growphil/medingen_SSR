@@ -1,0 +1,536 @@
+.substitution-banner-section {
+    width: 100%;
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.substitution-banner-container {
+    background: #F3EBFF;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 48px;
+    position: relative;
+    overflow: hidden;
+    min-height: auto;
+    box-sizing: border-box;
+    gap: 40px;
+}
+
+.sb-left-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sb-title {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.sb-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Use grid for alignment */
+    /* Add max bounds to grid to keep it tidy */
+    column-gap: 32px;
+    row-gap: 24px;
+    margin-bottom: 40px;
+    align-items: start;
+}
+
+.sb-feature-item {
+    display: flex;
+    align-items: flex-start;
+    /* Align to top for multi-line text */
+    gap: 16px;
+    /* Consistent gap between icon and text */
+    min-width: 0;
+}
+
+
+.sb-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    /* Add subtle bg to icon */
+    border-radius: 12px;
+}
+
+.sb-icon-wrapper img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    /* Removed filter to show original SVG colors */
+}
+
+/* Feature Text Styles */
+.sb-feature-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.sb-feature-label {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #8B5CF6;
+}
+
+.sb-feature-desc {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Actions */
+.sb-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8px;
+    /* Slight push down from features */
+}
+
+.sb-know-more-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    /* Slightly wider padding like op-upload-btn */
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 15px;
+    /* Bump up font size */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sb-know-more-btn:hover {
+    background: #222;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sb-example-btn {
+    background: none;
+    border: none;
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.sb-example-btn:hover {
+    color: #6D28D9;
+}
+
+.sb-right-card {
+    background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%);
+    border-radius: 20px;
+    width: 400px;
+    /* Fixed proportional width */
+    max-width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    padding: 32px;
+    /* Increased internal padding */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.25);
+    /* Adjusted shadow */
+    overflow: hidden;
+    box-sizing: border-box;
+    align-self: stretch;
+    /* Match height of container implicitly or stretch */
+    min-height: 220px;
+}
+
+.sb-card-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.sb-save-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    gap: 4px;
+}
+
+.save-line-1 {
+    display: flex;
+    align-items: flex-start;
+    line-height: 0.8;
+}
+
+.save-word {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.upto-word {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-left: 5px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.save-percent {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 0.9;
+}
+
+.sb-sub-text {
+    background: #fff;
+    color: #000;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    width: fit-content;
+    max-width: 100%;
+    margin-top: 12px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.sb-doctor-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    /* Fixed width for doctor image area */
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.sb-doctor-image img {
+    height: 90%;
+    /* Adjust to fit nicely from bottom */
+    width: auto;
+    object-fit: contain;
+}
+
+/* ----- Tablet (1024px) ----- */
+@media (max-width: 1024px) {
+    .substitution-banner-section {
+        margin: 32px auto;
+        padding: 0 24px;
+    }
+
+    .substitution-banner-container {
+        flex-direction: column;
+        padding: 40px 32px;
+        gap: 40px;
+        min-height: auto;
+        align-items: stretch;
+    }
+
+    .sb-left-content {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sb-title {
+        font-size: 28px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .sb-features {
+        justify-content: center;
+        text-align: left;
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
+    .sb-feature-item {
+        justify-content: center;
+    }
+
+    .sb-actions {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Save 70% card: full width, proportional scaling */
+    .sb-right-card {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        min-height: 220px;
+        height: auto;
+        aspect-ratio: auto;
+        padding: 24px;
+        align-self: center;
+    }
+
+    .save-word {
+        font-size: 36px;
+    }
+
+    .save-percent {
+        font-size: 52px;
+    }
+
+    .sb-doctor-image {
+        width: 140px;
+    }
+}
+
+/* ----- Mobile (768px and below) ----- */
+@media (max-width: 768px) {
+    .substitution-banner-section {
+        margin: 16px auto;
+        padding: 0 16px;
+    }
+
+    .substitution-banner-container {
+        padding: 24px 20px;
+        gap: 24px;
+        border-radius: 20px;
+        align-items: flex-start;
+        /* Left align content */
+    }
+
+    .sb-left-content {
+        text-align: left;
+        /* Left align text */
+        width: 100%;
+    }
+
+    .sb-title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    /* Features - Single Row */
+    .sb-features {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .sb-feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 6px;
+        flex: 1;
+        min-width: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .sb-icon-wrapper {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        margin: 0 auto;
+    }
+
+    .sb-icon-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .sb-feature-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sb-feature-label {
+        font-size: 14px;
+        color: #8B5CF6;
+        margin-bottom: 2px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .sb-feature-desc {
+        font-size: 10px;
+        color: #666;
+        line-height: 1.2;
+        text-align: center;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Actions */
+    .sb-actions {
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sb-know-more-btn {
+        background: #000;
+        color: #fff;
+        padding: 10px 24px;
+        border-radius: 24px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .sb-example-btn {
+        font-size: 14px;
+        text-decoration: underline;
+        padding: 0;
+    }
+
+    /* Promo Card */
+    .sb-right-card {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+        border-radius: 20px;
+        padding: 24px;
+        min-height: 160px;
+        height: 180px;
+        /* Slightly adjusted to fit perfectly */
+        background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sb-card-content {
+        justify-content: center;
+        padding-top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sb-save-text {
+        gap: 4px;
+    }
+
+    .save-line-1 {
+        align-items: flex-start;
+    }
+
+    .save-word {
+        font-size: 36px;
+    }
+
+    .upto-word {
+        font-size: 9px;
+        margin-top: 6px;
+        margin-left: 4px;
+    }
+
+    .save-percent {
+        font-size: 60px;
+        line-height: 0.9;
+    }
+
+    .sb-sub-text {
+        font-size: 11px;
+        background: #fff;
+        color: #000;
+        padding: 5px 10px;
+        border-radius: 6px;
+        margin-top: 8px;
+        font-weight: 700;
+        display: inline-block;
+        width: fit-content;
+    }
+
+    .sb-doctor-image {
+        width: 150px;
+        right: -10px;
+        bottom: 0;
+        height: 95%;
+        /* Make him pop a bit more */
+        align-items: flex-end;
+    }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 380px) {
+    .sb-features {
+        gap: 4px;
+    }
+
+    .sb-feature-label {
+        font-size: 12px;
+    }
+
+    .sb-feature-desc {
+        font-size: 9px;
+    }
+
+    .sb-title {
+        font-size: 16px;
+    }
+
+    .save-word {
+        font-size: 28px;
+    }
+
+    .save-percent {
+        font-size: 48px;
+    }
+}
