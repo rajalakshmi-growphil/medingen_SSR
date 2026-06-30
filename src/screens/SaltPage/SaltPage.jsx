@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { getAveragePrice, getSalt, searchsaltProducts } from "../../api/Api";
+import { getAveragePrice, getSalt, searchsaltProducts, getProductDescription } from "../../api/Api";
 import Header from "../Dashboard/Header";
 
 import Navigation from "../Dashboard/Navigation";
@@ -132,10 +132,8 @@ export const SaltPage = () => {
       const response = await getSalt(salt_name);
       if (response) {
         setSalt((prev) => ({ ...prev, response }));
-        const desc = await axios.get(
-          `https://d1dh0rr5xj2p49.cloudfront.net/product_description/${response.description_url}`
-        );
-        const sanitized = DOMPurify.sanitize(desc.data);
+        const data = await getProductDescription(response.description_url);
+        const sanitized = DOMPurify.sanitize(data);
         const parsedTabs = parseDescriptionToTabs(sanitized);
         setTabs(parsedTabs);
         setActiveTab(Object.keys(parsedTabs)[0]);

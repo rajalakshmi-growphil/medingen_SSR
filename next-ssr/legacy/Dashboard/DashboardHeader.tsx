@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import HeadActions from "../components/HeadActions/HeadActions";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
-import { getDefaultAddress, getUser } from "../../lib/api";
+import { getDefaultAddress, getUser, getMainCategories } from "../../lib/api";
 import Swal from 'sweetalert2';
 import { InlineSearch } from "../components/InlineSearch/InlineSearch";
 
@@ -56,6 +56,23 @@ export const DashboardHeader: React.FC<DashboardHeaderProps> = ({
         value: `/categories/${nameToSlug(cat.name || cat.category_name || "")}`
       })).filter((cat: any) => cat.label !== "");
       setTopCategories(formattedCategories);
+    } else {
+      const fetchCategories = async () => {
+        try {
+          const data = await getMainCategories();
+          const cats = Array.isArray(data) 
+            ? data 
+            : (data?.categories || data?.main_categories || []);
+          const formattedCategories = cats.map((cat: any) => ({
+            label: cat.name || cat.category_name || "",
+            value: `/categories/${nameToSlug(cat.name || cat.category_name || "")}`
+          })).filter((cat: any) => cat.label !== "");
+          setTopCategories(formattedCategories);
+        } catch (error) {
+          console.error("Error fetching categories:", error);
+        }
+      };
+      fetchCategories();
     }
   }, [mainCategories]);
 

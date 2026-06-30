@@ -84,9 +84,39 @@ export const InlineSearch = ({
                 try {
                     const results = await searchVector(searchText);
                     if (Array.isArray(results)) {
+                        const q = searchText.toLowerCase().trim();
+                        const isTextMatch = (product: any) => {
+                            const name = (product.product_name || "").toLowerCase();
+                            const salt = (product.salt_name || "").toLowerCase();
+                            const composition = (product.composition || "").toLowerCase();
+
+                            if (name.includes(q) || salt.includes(q) || composition.includes(q)) {
+                                return true;
+                            }
+
+                            const queryWords = q.split(/\s+/).filter(Boolean);
+                            if (queryWords.length > 0 && queryWords.every(word => name.includes(word) || salt.includes(word) || composition.includes(word))) {
+                                return true;
+                            }
+
+                            const matchLen = Math.min(q.length, 3);
+                            if (matchLen >= 2) {
+                                const prefix = q.substring(0, matchLen);
+                                const nameWords = name.split(/\s+/).filter(Boolean);
+                                const saltWords = salt.split(/\s+/).filter(Boolean);
+                                if (nameWords.some((w: string) => w.startsWith(prefix)) || saltWords.some((w: string) => w.startsWith(prefix))) {
+                                    return true;
+                                }
+                            }
+                            return false;
+                        };
+
+                        const textMatches = results.filter(isTextMatch);
+                        const filteredResults = textMatches.length > 0 ? textMatches : results;
+
                         const seenSalts = new Set<string>();
                         const uniqueSalts: any[] = [];
-                        results.forEach((item: any) => {
+                        filteredResults.forEach((item: any) => {
                             if (item.salt_name) {
                                 const cleanSalt = item.salt_name.trim();
                                 if (cleanSalt && !seenSalts.has(cleanSalt.toUpperCase())) {
@@ -98,10 +128,46 @@ export const InlineSearch = ({
                                 }
                             }
                         });
-                        setFilteredSalts(uniqueSalts.slice(0, 5));
 
-                        const validProducts = results.filter((p: any) => p.product_pricing_new !== null);
-                        setFilteredSuggestions(validProducts.slice(0, 10));
+                        // Sort uniqueSalts so that lightweight/single salts matching the query come first
+                        const sortedUniqueSalts = [...uniqueSalts].map((salt, index) => {
+                            const comp = salt.composition.toLowerCase();
+                            let matchScore = 0;
+                            if (comp.startsWith(q)) {
+                                matchScore = 3;
+                            } else if (comp.includes(q)) {
+                                matchScore = 2;
+                            } else {
+                                const words = q.split(/\s+/).filter(Boolean);
+                                if (words.length > 0 && words.every(word => comp.includes(word))) {
+                                    matchScore = 1;
+                                }
+                            }
+                            const isSingle = !/[+/]|,|\band\b|\b&\b/i.test(salt.composition);
+                            return {
+                                salt,
+                                matchScore,
+                                isSingle,
+                                length: salt.composition.length,
+                                index
+                            };
+                        }).sort((a, b) => {
+                            if (b.matchScore !== a.matchScore) {
+                                return b.matchScore - a.matchScore;
+                            }
+                            if (b.isSingle !== a.isSingle) {
+                                return (b.isSingle ? 1 : 0) - (a.isSingle ? 1 : 0);
+                            }
+                            if (a.length !== b.length) {
+                                return a.length - b.length;
+                            }
+                            return a.index - b.index;
+                        }).map(item => item.salt);
+
+                        setFilteredSalts(sortedUniqueSalts);
+
+                        const validProducts = filteredResults.filter((p: any) => p.product_pricing_new !== null);
+                        setFilteredSuggestions(validProducts);
                         setTotalPages(1);
                     } else {
                         setFilteredSuggestions([]);
@@ -209,26 +275,41 @@ export const InlineSearch = ({
                                     <div className="inline-suggestions-title">Suggestions for "{searchText}"</div>
                                 )}
 
-                                {filteredSalts.length > 0 && (
-                                    filteredSalts.map((salt, index) => (
-                                        <div key={`salt-${salt.salt_id || index}`} className="inline-salt-suggestion" onMouseDown={() => gotoSaltPage(salt.composition)}>
-                                            <div className="inline-product-name">{salt.composition}</div>
-                                            <div className="inline-product-salt">in salt</div>
+                                {(filteredSalts.length > 0 || filteredSuggestions.length > 0) && (
+                                    <div className="inline-search-split-container">
+                                        <div className="inline-search-col inline-salts-col">
+                                            <div className="inline-column-header">Salts</div>
+                                            {filteredSalts.length > 0 ? (
+                                                filteredSalts.map((salt, index) => (
+                                                    <div key={`salt-${salt.salt_id || index}`} className="inline-salt-suggestion" onMouseDown={() => gotoSaltPage(salt.composition)}>
+                                                        <div className="inline-product-name">{salt.composition}</div>
+                                                        <div className="inline-product-salt">in salt</div>
+                                                    </div>
+                                                ))
+                                            ) : (
+                                                <div className="inline-no-results-placeholder">No matching salts found</div>
+                                            )}
                                         </div>
-                                    ))
-                                )}
-
-                                {filteredSuggestions.map((suggestion, index) => (
-                                    <div key={`prod-${suggestion.product_id || index}`} className="inline-suggestion" onMouseDown={() => handleSelectSuggestion(suggestion)}>
-                                        <div className="inline-product-name">{suggestion.product_name}</div>
-                                        <div className="inline-product-pricing">
-                                            <div className="inline-price">₹ {suggestion.product_pricing_new || 0}</div>
-                                            <div className="inline-icon">
-                                                <img className="inline-medicine-icon" alt="category" src={suggestion.category_outline_url ? "https://d1dh0rr5xj2p49.cloudfront.net/categories/" + suggestion.category_outline_url : "/medicine-icon.svg"} />
-                                            </div>
+                                        <div className="inline-search-col inline-products-col">
+                                            <div className="inline-column-header">Products</div>
+                                            {filteredSuggestions.length > 0 ? (
+                                                filteredSuggestions.map((suggestion, index) => (
+                                                    <div key={`prod-${suggestion.product_id || index}`} className="inline-suggestion" onMouseDown={() => handleSelectSuggestion(suggestion)}>
+                                                        <div className="inline-product-name">{suggestion.product_name}</div>
+                                                        <div className="inline-product-pricing">
+                                                            <div className="inline-price">₹ {suggestion.product_pricing_new || 0}</div>
+                                                            <div className="inline-icon">
+                                                                <img className="inline-medicine-icon" alt="category" src={suggestion.category_outline_url ? "https://d1dh0rr5xj2p49.cloudfront.net/categories/" + suggestion.category_outline_url : "/medicine-icon.svg"} />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                ))
+                                            ) : (
+                                                <div className="inline-no-results-placeholder">No matching products found</div>
+                                            )}
                                         </div>
                                     </div>
-                                ))}
+                                )}
 
                                 {totalPages > 1 && (
                                     <div className="inline-pagination">

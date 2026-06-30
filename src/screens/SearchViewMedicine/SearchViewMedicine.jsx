@@ -90,6 +90,7 @@ import {
   getAllBlogs,
   getOffers,
   getMainCategories,
+  getProductDescription,
 } from "../../api/Api";
 
 
@@ -1792,8 +1793,8 @@ export default function SearchViewMedicine() {
       const targetHtmlUrl = result.descriptionLegacyUrl || (result.productDescription?.endsWith('.html') ? result.productDescription : null);
       if (targetHtmlUrl) {
         try {
-          const res = await axios.get(`https://d1dh0rr5xj2p49.cloudfront.net/product_description/${targetHtmlUrl}`);
-          const sanitized = DOMPurify.sanitize(res.data);
+          const data = await getProductDescription(targetHtmlUrl);
+          const sanitized = DOMPurify.sanitize(data);
           const parsed = parseDescriptionToTabs(sanitized);
           if (parsed["Frequently Asked Questions"]) injectFaqSchema(parsed["Frequently Asked Questions"]);
           setTabs(parsed);

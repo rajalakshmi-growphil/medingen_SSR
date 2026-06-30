@@ -9,8 +9,6 @@ export const API_ENDPOINT = 'https://medingen.in/api/';
 // export const API_ENDPOINT = 'https://kvs7ldzc-8001.inc1.devtunnels.ms/api/';
 // export const API_ENDPOINT = 'https://ybtl1v52xd.execute-api.ap-south-1.amazonaws.com/dev/api/';
 
-
-
 const handleSignOut = () => {
   Cookies.remove('jwt_token');
   Cookies.remove('customer_name');
@@ -1689,6 +1687,11 @@ export const getProductDetails = async (id = 0, name = "") => {
   const response = await axios.get(API_ENDPOINT + `product_details/${id}?name=${name}`, {
 
   });
+  return response.data;
+}
+
+export const getProductDescription = async (filename) => {
+  const response = await axios.get(API_ENDPOINT + `product_description/${filename}`);
   return response.data;
 }
 

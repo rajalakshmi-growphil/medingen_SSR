@@ -45,9 +45,39 @@ export const SearchBox = () => {
         try {
           const results = await searchVector(searchText);
           if (Array.isArray(results)) {
+            const q = searchText.toLowerCase().trim();
+            const isTextMatch = (product) => {
+              const name = (product.product_name || "").toLowerCase();
+              const salt = (product.salt_name || "").toLowerCase();
+              const composition = (product.composition || "").toLowerCase();
+
+              if (name.includes(q) || salt.includes(q) || composition.includes(q)) {
+                return true;
+              }
+
+              const queryWords = q.split(/\s+/).filter(Boolean);
+              if (queryWords.length > 0 && queryWords.every(word => name.includes(word) || salt.includes(word) || composition.includes(word))) {
+                return true;
+              }
+
+              const matchLen = Math.min(q.length, 3);
+              if (matchLen >= 2) {
+                const prefix = q.substring(0, matchLen);
+                const nameWords = name.split(/\s+/).filter(Boolean);
+                const saltWords = salt.split(/\s+/).filter(Boolean);
+                if (nameWords.some(w => w.startsWith(prefix)) || saltWords.some(w => w.startsWith(prefix))) {
+                  return true;
+                }
+              }
+              return false;
+            };
+
+            const textMatches = results.filter(isTextMatch);
+            const filteredResults = textMatches.length > 0 ? textMatches : results;
+
             const seenSalts = new Set();
             const uniqueSalts = [];
-            results.forEach((item) => {
+            filteredResults.forEach((item) => {
               if (item.salt_name) {
                 const cleanSalt = item.salt_name.trim();
                 if (cleanSalt && !seenSalts.has(cleanSalt.toUpperCase())) {
@@ -59,10 +89,46 @@ export const SearchBox = () => {
                 }
               }
             });
-            setFilteredSalts(uniqueSalts.slice(0, 5));
 
-            const validProducts = results.filter(p => p.product_pricing_new !== null);
-            setFilteredSuggestions(validProducts.slice(0, 10));
+            // Sort uniqueSalts so that lightweight/single salts matching the query come first
+            const sortedUniqueSalts = [...uniqueSalts].map((salt, index) => {
+              const comp = salt.composition.toLowerCase();
+              let matchScore = 0;
+              if (comp.startsWith(q)) {
+                matchScore = 3;
+              } else if (comp.includes(q)) {
+                matchScore = 2;
+              } else {
+                const words = q.split(/\s+/).filter(Boolean);
+                if (words.length > 0 && words.every(word => comp.includes(word))) {
+                  matchScore = 1;
+                }
+              }
+              const isSingle = !/[+/]|,|\band\b|\b&\b/i.test(salt.composition);
+              return {
+                salt,
+                matchScore,
+                isSingle,
+                length: salt.composition.length,
+                index
+              };
+            }).sort((a, b) => {
+              if (b.matchScore !== a.matchScore) {
+                return b.matchScore - a.matchScore;
+              }
+              if (b.isSingle !== a.isSingle) {
+                return (b.isSingle ? 1 : 0) - (a.isSingle ? 1 : 0);
+              }
+              if (a.length !== b.length) {
+                return a.length - b.length;
+              }
+              return a.index - b.index;
+            }).map(item => item.salt);
+
+            setFilteredSalts(sortedUniqueSalts);
+
+            const validProducts = filteredResults.filter(p => p.product_pricing_new !== null);
+            setFilteredSuggestions(validProducts);
             setTotalPages(1);
           } else {
             setFilteredSuggestions([]);
@@ -184,27 +250,43 @@ export const SearchBox = () => {
                   {filteredSuggestions.length > 0 && (
                     <div className="text-wrapper-5">Suggestions for "{searchText}"</div>
                   )}
-                  {filteredSalts.length > 0 && (
-                    filteredSalts.map((salt) => (
-                      <div key={salt.salt_id} className="salt-suggestion" onClick={() => { gotoSaltPage(salt.composition) }} >
-                        <div className="product-name">{salt.composition}</div>
-                        <div className="product-salt">
-                          in salt
-                        </div>
+                  {(filteredSalts.length > 0 || filteredSuggestions.length > 0) && (
+                    <div className="search-split-container">
+                      <div className="search-col salts-col">
+                        <div className="column-header">Salts</div>
+                        {filteredSalts.length > 0 ? (
+                          filteredSalts.map((salt) => (
+                            <div key={salt.salt_id} className="salt-suggestion" onClick={() => { gotoSaltPage(salt.composition) }} >
+                              <div className="product-name">{salt.composition}</div>
+                              <div className="product-salt">
+                                in salt
+                              </div>
+                            </div>
+                          ))
+                        ) : (
+                          <div className="no-results-placeholder">No matching salts found</div>
+                        )}
                       </div>
-                    ))
-                  )}
-                  {filteredSuggestions.map((suggestion) => (
-                    <div key={suggestion.product_id} className="suggestion" onClick={() => { handleSelectSuggestion(suggestion) }} >
-                      <div className="product-name">{suggestion.product_name}</div>
-                      <div className="product-pricing">
-                        <div className="price">₹ {suggestion.product_pricing_new}</div>
-                        <div className="icon">
-                          <img className="medicine-icon" alt="Line arrow chevron" src={suggestion.category_outline_url ? "https://d1dh0rr5xj2p49.cloudfront.net/categories/" + suggestion.category_outline_url : "/medicine-icon.svg"} fetchPriority="high" />
-                        </div>
+                      <div className="search-col products-col">
+                        <div className="column-header">Products</div>
+                        {filteredSuggestions.length > 0 ? (
+                          filteredSuggestions.map((suggestion) => (
+                            <div key={suggestion.product_id} className="suggestion" onClick={() => { handleSelectSuggestion(suggestion) }} >
+                              <div className="product-name">{suggestion.product_name}</div>
+                              <div className="product-pricing">
+                                <div className="price">₹ {suggestion.product_pricing_new}</div>
+                                <div className="icon">
+                                  <img className="medicine-icon" alt="Line arrow chevron" src={suggestion.category_outline_url ? "https://d1dh0rr5xj2p49.cloudfront.net/categories/" + suggestion.category_outline_url : "/medicine-icon.svg"} fetchPriority="high" />
+                                </div>
+                              </div>
+                            </div>
+                          ))
+                        ) : (
+                          <div className="no-results-placeholder">No matching products found</div>
+                        )}
                       </div>
                     </div>
-                  ))}
+                  )}
                   {totalPages > 1 && (
                     <div className="pagination">
                       <button onClick={handlePreviousPage} disabled={currentPage === 1}>

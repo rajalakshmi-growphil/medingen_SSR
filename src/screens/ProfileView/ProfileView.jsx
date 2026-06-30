@@ -49,7 +49,9 @@ export const ProfileView = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [editData, setEditData] = useState({
     customer_name: "",
-    dob: ""
+    dob: "",
+    gender: "",
+    blood_group: ""
   });
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -598,7 +600,9 @@ export const ProfileView = () => {
                     setIsEditing(true);
                     setEditData({
                       customer_name: profile.name,
-                      dob: profile.dob
+                      dob: profile.dob,
+                      gender: profile.gender || "Male",
+                      blood_group: profile.blood_group || "AB+"
                     });
                   }}
                 >
@@ -649,7 +653,9 @@ export const ProfileView = () => {
                       setIsEditing(true);
                       setEditData({
                         customer_name: profile.name,
-                        dob: profile.dob
+                        dob: profile.dob,
+                        gender: profile.gender || "Male",
+                        blood_group: profile.blood_group || "AB+"
                       });
                     }}>Edit Fields</span>
                   )}
@@ -682,6 +688,49 @@ export const ProfileView = () => {
                     ) : (
                       <div className="field-input-mock">
                         {profile.dob}
+                      </div>
+                    )}
+                  </div>
+                  <div className="info-field">
+                    <label className="field-label">Gender</label>
+                    {isEditing ? (
+                      <select 
+                        className="field-select" 
+                        value={editData.gender} 
+                        onChange={(e) => setEditData({ ...editData, gender: e.target.value })}
+                      >
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    ) : (
+                      <div className="field-input-mock">
+                        {profile.gender || "Male"}
+                        <FiChevronDown className="dropdown-arrow" />
+                      </div>
+                    )}
+                  </div>
+                  <div className="info-field">
+                    <label className="field-label">Blood Group</label>
+                    {isEditing ? (
+                      <select 
+                        className="field-select" 
+                        value={editData.blood_group} 
+                        onChange={(e) => setEditData({ ...editData, blood_group: e.target.value })}
+                      >
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                      </select>
+                    ) : (
+                      <div className="field-input-mock">
+                        {profile.blood_group || "AB+"}
+                        <FiChevronDown className="dropdown-arrow" />
                       </div>
                     )}
                   </div>

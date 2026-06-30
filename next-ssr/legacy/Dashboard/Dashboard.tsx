@@ -887,7 +887,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
         <div className="landing-page">
           <Footer 
             handleScrollToSection={handleScrollToSection} 
-            initialTopCategories={initialCategories}
+            initialTopCategories={initialMainCategories}
             initialFooterProducts={initialFooterProducts}
           />
         </div>

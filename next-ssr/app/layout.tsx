@@ -25,7 +25,9 @@ export default function RootLayout({
     <html lang="en" className={outfit.variable}>
       <body style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
         <Providers>
-          {children}
+          <div className="App">
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

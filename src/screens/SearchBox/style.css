@@ -349,3 +349,57 @@
 .search-box .overlap-3::-webkit-scrollbar-thumb:hover {
   background: #9ca3af;
 }
+
+/* Split Column Dropdown Layout */
+.search-box .search-split-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.search-box .search-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.search-box .search-col.products-col {
+  border-left: 1px solid #eaeaea;
+  padding-left: 16px;
+}
+
+.search-box .column-header {
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #8B5CF6;
+  margin-bottom: 4px;
+  padding: 0 12px;
+}
+
+.search-box .no-results-placeholder {
+  font-family: "Outfit", Helvetica, sans-serif;
+  font-size: 13px;
+  color: #999;
+  padding: 12px;
+  font-style: italic;
+}
+
+@media (max-width: 767px) {
+  .search-box .search-split-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .search-box .search-col.products-col {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #eaeaea;
+    padding-top: 16px;
+  }
+}

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import "./style.css";
 
+import { getMainCategories } from "@/lib/api";
+
 interface FooterProps {
   handleScrollToSection?: (section: string) => void;
   initialTopCategories?: any;
@@ -76,21 +78,44 @@ export const Footer: React.FC<FooterProps> = ({
       }).filter((cat: any) => cat.label !== "");
       setTopCategories(mapped);
     } else {
-      // Fallback categories
-      setTopCategories([
-        { label: "Ayurvedic & Herbal", type: "internal", value: "/categories/ayurvedic-and-herbal" },
-        { label: "Chronic Care", type: "internal", value: "/categories/chronic-care" },
-        { label: "Gastro Care", type: "internal", value: "/categories/gastro-care" },
-        { label: "Health Conditions", type: "internal", value: "/categories/health-conditions" },
-        { label: "Health Supplements", type: "internal", value: "/categories/health-supplements" },
-        { label: "Infection Care", type: "internal", value: "/categories/infection-care" },
-        { label: "Mental Health", type: "internal", value: "/categories/mental-health" },
-        { label: "Over The Counter (OTC)", type: "internal", value: "/categories/over-the-counter-otc" },
-        { label: "Pain & Inflammation Care", type: "internal", value: "/categories/pain-and-inflammation-care" },
-        { label: "Personal Care", type: "internal", value: "/categories/personal-care" },
-        { label: "Specialty Medicines", type: "internal", value: "/categories/specialty-medicines" },
-        { label: "Vitamins & Supplements", type: "internal", value: "/categories/vitamins-and-supplements" },
-      ]);
+      const fetchCats = async () => {
+        try {
+          const res = await getMainCategories();
+          const cats = Array.isArray(res) 
+            ? res 
+            : (res.categories || res.main_categories || []);
+          const mapped = cats.map((cat: any) => {
+            const categoryName = cat.name || cat.category_name || cat.title || "";
+            return {
+              label: categoryName,
+              type: "internal",
+              value: `/categories/${nameToSlug(categoryName)}`,
+            };
+          }).filter((cat: any) => cat.label !== "");
+          if (mapped.length > 0) {
+            setTopCategories(mapped);
+            return;
+          }
+        } catch (e) {
+          console.error("Error fetching footer categories:", e);
+        }
+        // Fallback categories
+        setTopCategories([
+          { label: "Ayurvedic & Herbal", type: "internal", value: "/categories/ayurvedic-and-herbal" },
+          { label: "Chronic Care", type: "internal", value: "/categories/chronic-care" },
+          { label: "Gastro Care", type: "internal", value: "/categories/gastro-care" },
+          { label: "Health Conditions", type: "internal", value: "/categories/health-conditions" },
+          { label: "Health Supplements", type: "internal", value: "/categories/health-supplements" },
+          { label: "Infection Care", type: "internal", value: "/categories/infection-care" },
+          { label: "Mental Health", type: "internal", value: "/categories/mental-health" },
+          { label: "Over The Counter (OTC)", type: "internal", value: "/categories/over-the-counter-otc" },
+          { label: "Pain & Inflammation Care", type: "internal", value: "/categories/pain-and-inflammation-care" },
+          { label: "Personal Care", type: "internal", value: "/categories/personal-care" },
+          { label: "Specialty Medicines", type: "internal", value: "/categories/specialty-medicines" },
+          { label: "Vitamins & Supplements", type: "internal", value: "/categories/vitamins-and-supplements" },
+        ]);
+      };
+      fetchCats();
     }
   }, [initialTopCategories]);
 

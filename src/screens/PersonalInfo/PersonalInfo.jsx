@@ -16,6 +16,8 @@ export const PersonalInfo = () => {
     customer_name: "",
     email: "",
     dob: "",
+    gender: "Male",
+    blood_group: "AB+",
   });
 
   useEffect(() => {
@@ -29,6 +31,8 @@ export const PersonalInfo = () => {
         customer_name: profile.name || "",
         email: profile.email || "",
         dob: profile.dob || "",
+        gender: profile.gender || "Male",
+        blood_group: profile.blood_group || "AB+",
       });
     }
   }, [profile, navigate]);
@@ -299,6 +303,37 @@ export const PersonalInfo = () => {
                   onChange={handleDOBChange}
                   placeholder="DD-MM-YYYY"
                 />
+              </div>
+
+              <div className="pi-field-group">
+                <label className="pi-field-label">Gender</label>
+                <select
+                  className="pi-field-select"
+                  value={formData.gender}
+                  onChange={(e) => setFormData({ ...formData, gender: e.target.value })}
+                >
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div className="pi-field-group">
+                <label className="pi-field-label">Blood Group</label>
+                <select
+                  className="pi-field-select"
+                  value={formData.blood_group}
+                  onChange={(e) => setFormData({ ...formData, blood_group: e.target.value })}
+                >
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                </select>
               </div>
             </div>
 

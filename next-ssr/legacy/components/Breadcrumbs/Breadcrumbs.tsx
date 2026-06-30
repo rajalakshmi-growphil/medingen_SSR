@@ -122,11 +122,14 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ className = "" }) => {
                 </li>
                 {breadcrumbTrail.map((crumb, index) => {
                     const isLast = index === breadcrumbTrail.length - 1;
+                    const shouldDisableNavigate = isLast || crumb.path === '/salt';
                     return (
                         <li key={crumb.path} className={`breadcrumbs-item ${isLast ? 'active' : ''}`}>
                             <span className="breadcrumbs-separator">/</span>
-                            {isLast ? (
-                                <span aria-current="page">{crumb.name}</span>
+                            {shouldDisableNavigate ? (
+                                <span aria-current="page" style={crumb.path === '/salt' ? { cursor: 'default', color: '#6c757d' } : undefined}>
+                                    {crumb.name}
+                                </span>
                             ) : (
                                 <Link href={crumb.path}>{crumb.name}</Link>
                             )}
