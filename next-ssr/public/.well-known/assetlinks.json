@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "in.medingen.twa",
-        "sha256_cert_fingerprints": ["BB:5A:79:E6:E2:9D:BA:98:CE:D4:AC:B2:75:89:8C:74:DA:62:FE:08:89:35:A0:C5:FF:B6:0B:D7:54:B4:87:02"]
-      }
-    }]

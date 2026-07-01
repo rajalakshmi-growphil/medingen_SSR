@@ -1,8 +1,0 @@
-.search-view-medicine .salt-hor-flex{
-    flex-direction: column-reverse;
-}
-@media only screen and (min-width: 700px) {
-    .search-view-medicine .salt-hor-flex{
-        flex-direction: row;
-    }
-}

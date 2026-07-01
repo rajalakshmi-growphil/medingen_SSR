@@ -1,19 +1,27 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
-import "./index.css";
-import "./App.css";
-import { Providers } from "./providers";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import ClientProviders from "../components/ClientProviders";
 
-const outfit = Outfit({
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  variable: "--font-outfit",
-  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Medingen - Buy Generic Medicines Online | Trusted Store",
-  description: "Medingen offers affordable generic medicines and fast doorstep delivery across India. Shop online for trusted and quality healthcare products.",
-  keywords: "generic medicines, online pharmacy, affordable healthcare, india pharmacy",
+  title: "MediGen – Buy Generic & Branded Medicines Online",
+  description: "MediGen is a premium online pharmacy offering same composition, quality, and salt generic substitute medicines with up to 80% cost savings. Fast delivery nationwide.",
+  metadataBase: new URL("https://medingen.in"),
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
@@ -22,13 +30,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={outfit.variable}>
-      <body style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
-        <Providers>
-          <div className="App">
-            {children}
-          </div>
-        </Providers>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-slate-50 text-slate-900 font-sans">
+        <ClientProviders>
+          <Header />
+          <main className="flex-1 w-full flex flex-col">{children}</main>
+          <Footer />
+        </ClientProviders>
       </body>
     </html>
   );
